@@ -33,13 +33,21 @@
 }
 .logo{
     cursor: pointer;
+    border:solid 2px #fff;
+    padding: 5px 15px;
 }
-.cart-icon{
+.icon:hover{
     cursor: pointer;
-    width: 40px;
+    transform: scale(1.2);
+}
+
+.container-icons{
+    display: flex;
+    flex:1;
+    justify-content: space-between;
 }
 .nav ul{
-    flex: 1;
+    flex: 7;
     text-align: right;
     padding-right: 30px;
 }
@@ -115,7 +123,6 @@
     letter-spacing: 8px;
     margin-bottom: 20px;
     animation: text 2s .5s;
-    border:solid 2px #fff;
 }
 .text2{
     font-size: 40px;
