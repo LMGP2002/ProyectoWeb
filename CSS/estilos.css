@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     color: #fff;
+    background-color: red;
 }
 .nav{
     display: flex;
