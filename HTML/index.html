@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +8,6 @@
     <link rel="stylesheet" href="../CSS/estilos.css">
     <script src="https://kit.fontawesome.com/523f0710e5.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
     <header class="header-contenedor">
         <nav class="nav">
@@ -31,36 +29,56 @@
         <div class="container-text">
             <span class="text1 disable-select">welcome to</span>
             <span class="text2 disable-select">the glory</span>
-            <a class="boton disable-select" href="#modal">Login</a>
+            <a class="boton disable-select" href="#">Login</a>
         </div>
         <video class="fondo" src="../Recursos/bg.mp4" loop autoplay muted></video>
         <div class="overlay"></div>
     </header>
+    <section class="about-us">
+        <article class="uno">
+            <h1>HardWork</h1>
+            <h3>¿Quieres empezar a forjar la disciplina en tu vida?</h3>
+            <p>Contamos con el equipamento más moderno, planes alimenticios, rutinas de ejercicios y los mejores instructores para que puedas conseguir la mejor versión de ti. <br><span>¡No esperes más!</span></p>
+            <a class="boton" href="#">Únete</a>
+        </article>
+        <article class="dos">
+            <h3>Horarios de atención</h3>
+            <div>
+                <p>Lunes-Sábados</p>
+                <p class="horarios">7:00 A.M. - 10:00 P.M.</p>
+                <p>Festivos</p>
+                <p class="horarios">7:00 A.M. - 8:00 P.M.</p> 
+                <p>Domingo: No hay servicio</p>
+            </div>
+        </article>
 
-    <div id="modal">
-        <h2>Iniciar sesión</h2>
-        <label>Número de indentificación</label>
-        <input type="number" id="cc" name="cc">
-        <label>Contraseña</label>
-        <input type="number" id="contraseña" name="contraseña">
-        <button style="color: black;">Ingresar</button>
-        <button style="color: black;">Registrarse</button>
-        <button style="color: black;">Olvidó contraseña</button>
-        <label>Número de indentificación</label>
-        <input type="number" id="cc" name="cc">
-        <label>Nombre</label>
-        <input type="text" id="nombre" name="nombre">
-        <label>Apellido</label>
-        <input type="text" id="apellido" name="apellido">
-        <label>Edad</label>
-        <input type="number" id="edad" name="edad">
-        <label>Sexo</label>
-        <input type="text" id="sexo" name="sexo">
-        <label>Peso</label>
-        <input type="number" id="peso" name="peso">
-        <label>Estatura</label>
-        <input type="number" id="estatura" name="estatura">
-    </div>
+    </section>
+
+    <!-- acá va a ir lo de registrar e iniciar sesión, por ahora solo borrador -->
+    <div id="registro">
+    <h2>Iniciar sesión</h2>
+    <label>Número de indentificación</label>
+    <input type="number" id="cc" name="cc">
+    <label>Contraseña</label>
+    <input type="number" id="contraseña" name="contraseña">
+    <button style="color: black;">Ingresar</button>
+    <button style="color: black;">Registrarse</button>
+    <button style="color: black;">Olvidó contraseña</button>
+  <!-- esto va a aparecer cuando le den en registrarse -->
+    <label>Número de indentificación</label>
+    <input type="number" id="cc" name="cc">
+    <label>Nombre</label>
+    <input type="text" id="nombre" name="nombre">
+    <label>Apellido</label>
+    <input type="text" id="apellido" name="apellido">
+    <label>Edad</label>
+    <input type="number" id="edad" name="edad">
+    <label>Sexo</label>
+    <input type="text" id="sexo" name="sexo">
+    <label>Peso</label>
+    <input type="number" id="peso" name="peso">
+    <label>Estatura</label>
+    <input type="number" id="estatura" name="estatura">
+</div>
 </body>
-
 </html>
