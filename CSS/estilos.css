@@ -196,17 +196,20 @@
 }
 .about-us{
     width: 100%;
+    height: 90vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8rem 15rem;
+    padding: 8rem 14rem;
     background: #171819;
 }
 .uno{
     width: 45%;
 }
 .dos{
+    border-left: 1px solid #666262;
     width: 45%;
+    padding:1rem 0 1rem 4rem;
 }
 .uno h1{
     font-size: 3.5rem;
@@ -238,5 +241,13 @@
     transition: background-color .3s;
 }
 .dos h3{
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.dos div p{
+    font-weight: 400;
+    margin: .5rem 0;
+}
+.horarios{
+    color: #B4B4B4;
 }
