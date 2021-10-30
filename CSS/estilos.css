@@ -15,6 +15,7 @@
     -ms-user-select: none;       /* Internet Explorer/Edge */
     user-select: none;           /* Non-prefixed version, currently supported by any browser but < IE9 */
 }
+/* header */
 .header-contenedor{
     position: relative;
     width: 100%;
@@ -158,11 +159,17 @@
     border-radius: .25rem;
     min-width: 150px;
     font-size: 22px;
+    text-align: center;
     text-decoration: none;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, .5);
     opacity: 0;
     animation: pulsos 1.5s infinite, visibilidadBoton 2s 2s;
     animation-fill-mode: forwards;
+}
+.boton:hover{
+    background: #fff;
+    color: black;
+    transition: background-color .3s, color .3s;
 }
 @keyframes visibilidadBoton {
     to{
@@ -183,7 +190,53 @@
         box-shadow: 0 0 0 0 rgba(256, 256, 256, 0);
     }
 }
-
+/* about-us */
 #registro{
     background-color: black;
+}
+.about-us{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 15rem;
+    background: #171819;
+}
+.uno{
+    width: 45%;
+}
+.dos{
+    width: 45%;
+}
+.uno h1{
+    font-size: 3.5rem;
+    margin-bottom: 1.1rem;
+}
+.uno h3{
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 1.1rem;
+}
+.uno p{
+    color: #B4B4B4;
+    font-size: 1.1rem;
+    font-weight: 200;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+.uno p span{
+    color: #B4B4B4;
+}
+.uno .boton{
+    opacity: 100;
+    animation: pulsos 1.5s infinite;
+    color: #fff;
+    
+}
+.uno .boton:hover{
+    background: #6ab04c;
+    transition: background-color .3s;
+}
+.dos h3{
+    font-size: 2.5rem;
 }
