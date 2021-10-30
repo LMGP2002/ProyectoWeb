@@ -12,7 +12,7 @@
 
 <body>
     <header class="header-contenedor" id="header">
-        <nav class="nav" >
+        <nav class="nav">
             <h2 class="logo disable-select">HardWork</h2>
             <ul class="disable-select">
                 <li><a class="disable-select" href="#header">Home</a></li>
@@ -31,7 +31,7 @@
         <div class="container-text">
             <span class="text1 disable-select">welcome to</span>
             <span class="text2 disable-select">the glory</span>
-            <a class="boton disable-select"  href="#modal">Login</a>
+            <a class="boton disable-select" href="#modal">Login</a>
         </div>
         <video class="fondo" src="../Recursos/bg.mp4" loop autoplay muted></video>
         <div class="overlay"></div>
@@ -55,7 +55,6 @@
             </div>
         </article>
     </section>
-    
     <aside id="modal" class="modal">
         <div class="content-modal" id="registro">
             <header>
@@ -67,21 +66,33 @@
                 <br><br>
                 <label class="style-label">Número de indentificación</label>
                 <br>
-                <input type="number" id="cc" name="cc" class="style-input" required >
+                <input type="number" id="cc" name="cc" class="style-input" required>
                 <br><br>
                 <label class="style-label">Contraseña</label>
                 <br>
                 <input type="password" id="contraseña" name="contraseña" class="style-input" required>
-                <br><br><br><br>   
+                <br><br><br><br>
                 <button class="style-button">Ingresar</button>
-                <button class="style-button">Registrar</button>
-                <button class="style-button" >Olvidó contraseña</button>
+                <button class="style-button"><a href="#modal-registro">Registrar</a></button>
+                <button class="style-button">Olvidó contraseña</button>
             </article>
             <a href="#" class="btn-close-modal"></a>
         </div>
     </aside>
+    <aside id="modal-registro" class="modal-registro">
+        <div class="content-modal-registro" id="registro-modal">
+            <header>
+                <a href="#" class="close-modal-registro">X</a>
+            </header>
+            <article>
+                <h1>hola</h1>
+              </article>
+            <a href="#" class="btn-close-modal-registro"></a>
+        </div>
+    </aside>
+ 
     <script src="../JS/jquery-3.6.0.min.js"></script>
     <script src="../JS/estilos.js"></script>
 </body>
-</html>
 
+</html>
