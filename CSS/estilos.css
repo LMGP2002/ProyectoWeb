@@ -7,6 +7,7 @@
     color: #fff;
     font-weight: 600;
 }
+
 .disable-select {
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none;   /* Chrome/Safari/Opera */
@@ -23,14 +24,15 @@
 }
 
 .nav{
+    position: fixed;
     width: 100%;
-    position: absolute;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px 60px;
-    z-index: 1;
+    z-index: 1000;
+    transition: background-color, .2s ease-in-out;
 }
 .logo{
     cursor: pointer;
@@ -83,6 +85,7 @@
     top: 0;
     left: 0;
     object-fit: cover;
+    z-index: -1;
 }
 .overlay{
     position: absolute;
@@ -94,6 +97,7 @@
     background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     mix-blend-mode: overlay;
+    z-index: -2;
 }
 .container-text{
     text-align: center;
@@ -234,10 +238,10 @@
     opacity: 100;
     animation: pulsos 1.5s infinite;
     color: #fff;
-    
+    background: #6ab04c;
 }
 .uno .boton:hover{
-    background: #6ab04c;
+    background: #F24B4B;
     transition: background-color .3s;
 }
 .dos h3{
