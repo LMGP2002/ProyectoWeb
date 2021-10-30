@@ -9,12 +9,13 @@
     <script src="https://kit.fontawesome.com/523f0710e5.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="header-contenedor">
+    <header class="header-contenedor" id="header">
+        <video class="fondo" src="../Recursos/bg.mp4" loop autoplay muted></video>
         <nav class="nav">
-            <h2 class="logo disable-select">HardWork</h2>
+            <h2 class="logo disable-select" id="logos">HardWork</h2>
             <ul class="disable-select">
-                <li><a class="disable-select" href="">Home</a></li>
-                <li><a class="disable-select" href="">About us</a></li>
+                <li><a class="disable-select" href="#header">Home</a></li>
+                <li><a class="disable-select" href="#about">About us</a></li>
                 <li><a class="disable-select" href="">Contact</a></li>
                 <li><a class="disable-select" href="">Gallery</a></li>
             </ul>
@@ -31,10 +32,9 @@
             <span class="text2 disable-select">the glory</span>
             <a class="boton disable-select" href="#">Start now</a>
         </div>
-        <video class="fondo" src="../Recursos/bg.mp4" loop autoplay muted></video>
         <div class="overlay"></div>
     </header>
-    <section class="about-us">
+    <section class="about-us" id="about">
         <article class="uno">
             <h1>HardWork</h1>
             <h3>¿Quieres empezar a forjar la disciplina en tu vida?</h3>
@@ -54,8 +54,7 @@
 
     </section>
 
-    <!-- acá va a ir lo de registrar e iniciar sesión, por ahora solo borrador -->
-    <div id="registro">
+    <!-- <div id="registro">
     <h2>Iniciar sesión</h2>
     <label>Número de indentificación</label>
     <input type="number" id="cc" name="cc">
@@ -64,7 +63,7 @@
     <button style="color: black;">Ingresar</button>
     <button style="color: black;">Registrarse</button>
     <button style="color: black;">Olvidó contraseña</button>
-  <!-- esto va a aparecer cuando le den en registrarse -->
+
     <label>Número de indentificación</label>
     <input type="number" id="cc" name="cc">
     <label>Nombre</label>
@@ -79,6 +78,7 @@
     <input type="number" id="peso" name="peso">
     <label>Estatura</label>
     <input type="number" id="estatura" name="estatura">
-</div>
+</div> -->
+<script src="../JS/estilos.js"></script>
 </body>
 </html>
