@@ -251,3 +251,99 @@
 .horarios{
     color: #B4B4B4;
 }
+
+/* modal login */
+.style-button:hover{
+    cursor: pointer;   
+}
+.style-button{
+    background: linear-gradient(102deg, #4551b5 40%, #543fd7 60%);
+   border:none;
+    display: inline-block;
+    margin-left: 45px;
+    padding: 10px 10px;
+    border-radius: .25rem;
+    min-width: 90px;
+    font-size: 13px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, .5);
+    opacity: 0;
+    animation: pulsos 1.5s infinite, visibilidadBoton 1s 1s;
+    animation-fill-mode: forwards;
+}
+#style-h2{
+    text-align:center ;
+}
+
+.style-label{
+    margin-left: 40px;
+}
+.style-input{
+    margin-left: 40px;
+    width: 84%;
+    height: 35px;
+    color: black;
+    border: 0;
+    border-radius: 5px;
+}
+.style-input:focus{
+    outline:none;
+} 
+.modal{
+    position: fixed;
+    top:-100hv;
+    left: 0;
+    z-index: 99999999;
+    background: rgba(19, 17, 17, 0.74);
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+.modal .content-modal{
+    width: 100%;
+    max-width: 500px;
+    position: fixed;
+    left: 50%;
+    top: -100vh;
+    transition: top 0.35s ease;
+    margin-left: -250px;
+    background: white;
+    box-shadow: 0 1px 2px rgba(29, 27, 27, 0.5);
+    border-radius: 2px;
+    z-index: 99999999;
+}
+.modal article{
+    height: 430px;
+    background: #232526; 
+    background: -webkit-linear-gradient(to bottom, #232526, #414345);
+    background: linear-gradient(to bottom, #232526, #414345); 
+}
+.close-modal{
+    color:white;
+    position: absolute;
+    top: 0.2em;
+    right: 0.375em;
+    margin: 0;
+    padding: 5px;
+    text-decoration: none;
+
+}
+
+.modal:target{
+    opacity: 1;
+    top:0;
+}
+
+.modal.btn-close-modal{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999991;
+}
+.modal:target .content-modal{
+    top: 90px;
+    transition: top 0.35s ease;
+}
