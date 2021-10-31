@@ -27,4 +27,30 @@ $(document).ready(function(){
     });
   });
 
-  
+//MODAL USERS
+let cerrar=document.querySelector(".close");
+let abrir=document.querySelector(".modal_users");
+let modal=document.querySelector(".modal_content");
+let modalC=document.querySelector(".modal_container");
+
+abrir.addEventListener('click',(e)=>{
+    e.preventDefault();
+    modalC.style.visibility='visible';
+    modal.classList.remove('modal_close');
+});
+function close(){
+    modal.classList.add('modal_close');
+    setTimeout(function(){
+        modalC.style.visibility='hidden';
+    },350);
+}
+cerrar.addEventListener('click',(e)=>{
+    e.preventDefault();
+    close();
+});
+
+window.addEventListener('click',(e)=>{
+    if(e.target==modalC){
+        close();
+    }
+});

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HardWork </title>
-    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="/CSS/estilos.css">
     <script src="https://kit.fontawesome.com/523f0710e5.js" crossorigin="anonymous"></script>
 </head>
 
@@ -21,13 +21,36 @@
                 <li><a class="disable-select" href="">Gallery</a></li>
             </ul>
             <div class="container-icons">
-                <i class="fab fa-facebook-f icon disable-select"></i>
-                <i class="fab fa-twitter icon disable-select"></i>
-                <i class="fab fa-youtube icon disable-select"></i>
-                <i class="fas fa-shopping-cart icon disable-select"></i>
+                <a class="modal_users" href="#"><i class="fas fa-user icon disable-select"></i></a>
+                <a href="#"><i id="prueba" class="fab fa-facebook-f icon disable-select"></i></a>
+                <a href="#"><i class="fab fa-youtube icon disable-select"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart icon disable-select"></i></a>
             </div>
-
         </nav>
+
+        <div class="modal_container" >
+            <div class="modal_content modal_close">
+                <div class="transparencia">
+                    <a href="" class="close"><i class="fas fa-times equis"></i></a>
+                    <div class="modal_mover">
+                        <h2 class="modal_title">Your user</h2>
+                        <div class="modal_img"><img src="/Recursos/h.png" alt="hombre"></div>
+                        <div class="modal_texts">
+                            <p>Luis Miguel</p>
+                            <span>Platino</span>
+                        </div>
+                    </div>
+                    <div class="button_container_modal">
+                        <button class="modal_button">Ver perfil</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+       
+
+
         <div class="container-text">
             <span class="text1 disable-select">welcome to</span>
             <span class="text2 disable-select">the glory</span>
