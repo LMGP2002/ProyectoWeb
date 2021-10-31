@@ -224,6 +224,7 @@ body, #modal-registro, #modal-registro-iniciar, #modal-olvido{
     position: relative;
     transform: translateY(0);
     transition: transform .8s;
+    overflow: hidden;
 }
 .transparencia{
     display: flex;
@@ -314,20 +315,6 @@ body, #modal-registro, #modal-registro-iniciar, #modal-olvido{
     transform: scale(1.05);
 
 }
-@keyframes pulsos {
-    from{
-        transform: scale(.99);
-        box-shadow: 0 0 0 0 rgba(256, 256, 256, .1);
-    }
-    70%{
-        transform: scale(1);
-        box-shadow: 0 0 0 15px rgba(256, 256, 256, 0);
-    }
-    100%{
-        transform: scale(.99);
-        box-shadow: 0 0 0 0 rgba(256, 256, 256, 0);
-    }
-}
 .close{
     position: absolute;
     top: 5px;
@@ -337,10 +324,6 @@ body, #modal-registro, #modal-registro-iniciar, #modal-olvido{
 .equis{
     font-size: 20px;
 }
-
-
-
-
 
 
 /* about-us */
