@@ -79,7 +79,8 @@
             </article>
         </div>
     </div>
-     <div id="modal-registro">
+    <!-- registro -->
+    <div id="modal-registro">
         <div id="style-contenido">
             <header id="style-registro-header">
                 <a href="#" id="cerrar">X</a>
@@ -96,39 +97,40 @@
                 <br>
                 <br>
                 <label id="style-apellido-registro">Apellido</label>
-                <input type="text" id="apellido" name="apellido" >
+                <input type="text" id="apellido" name="apellido">
                 <br><br>
                 <label id="style-edad-registro">Edad</label>
-                <input type="number" id="edad" name="edad" >
+                <input type="number" id="edad" name="edad">
                 <br><br>
                 <label id="style-sexo-registro">Sexo</label>
-                <input type="text" id="sexo" name="sexo" >
+                <input type="text" id="sexo" name="sexo">
                 <br><br>
                 <label id="style-peso-registro">Peso</label>
-                <input type="number" id="peso" name="peso" >
+                <input type="number" id="peso" name="peso">
                 <br><br>
                 <label id="style-estatura-registro">Estatura</label>
-                <input type="number" id="estatura" name="estatura" >
+                <input type="number" id="estatura" name="estatura">
                 <br> <br>
-                <label id="style-contra-registro" >Contraseña</label>
-                <input type="password" id="contraseña" name="contraseña" class="style-contra-regis">                
+                <label id="style-contra-registro">Contraseña</label>
+                <input type="password" id="contraseña" name="contraseña" class="style-contra-regis">
                 <label class="style-registro-aliemntacion">Alimentación</label><br>
                 <input type="text" id="alimentacion" name="alimentacion" class="alimentacion">
                 <br><br>
-               <button id="style-btn-registro" type="submit">Guardar</button>
+                <button id="style-btn-registro" type="submit">Guardar</button>
             </article>
         </div>
     </div>
+    <!-- olvidó contraseña -->
     <div id="modal-olvido">
         <div id="style-contenido-olvido">
             <header id="style-registro-header-olvido">
                 <a href="#" id="cerrar-olvido">X</a>
             </header>
-            <article>  <br>             
+            <article> <br>
                 <h2 id="style-olvido-h2">Restablecer contraseña</h2>
-                <br><label id="style-olvido-cc">Digite su número de identificación</label>
+                <br><label id="style-olvido-cc">Número de identificación</label>
                 <input id="cc" name="cc" class="style-olvido-cc-in">
-                <label id="style-olvio-contra">Digite su nueva contraseña</label>
+                <label id="style-olvio-contra">Nueva contraseña</label>
                 <input id="contraseña" name="contraseña" class="style-olvido-contra-in">
                 <label id="style-olvio-contra-confir">Confirmar contraseña nueva</label>
                 <input id="contraseña" name="contraseña" class="style-olvido-contra-in-nue">
@@ -136,8 +138,27 @@
             </article>
         </div>
     </div>
-
-    <script src="../JS/jquery-3.6.0.min.js"></script>
+    <section class="calculos" id="">
+        <article class="cal">
+            <h1>IMC</h1>
+            <h3>Calcula tu índice de masa corporal</h3>
+            <label>Peso (Kg)</label>
+            <input id="pesoo">
+            <label id="style-label-cal-esta">Estatura (Mt)</label>
+            <input id="estaturaa">
+            <textarea id="res" ></textarea>
+            <br>
+            <a class="boton" href="#">Calcular</a>
+        </article>
+        <article class="metabo">
+            <h1>Metabolismo basal</h1>
+            <h2>Calcula tu metabolismo basal</h2>
+            <div>
+                
+            </div>
+        </article>
+    </section>
+   <script src="../JS/jquery-3.6.0.min.js"></script>
     <script src="../JS/estilos.js"></script>
 </body>
 

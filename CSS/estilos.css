@@ -635,3 +635,86 @@ body, #modal-registro, #modal-registro-iniciar, #modal-olvido{
      margin-left: calc(100% - 59%);
   margin-top: 45%;
 }
+/* calcular */
+
+.calculos{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 14rem;
+    background: white;
+}
+.cal{
+    width: 45%;
+}
+
+.cal h1{
+    font-size: 3.5rem;
+    margin-bottom: 1.1rem;
+    color: black;
+}
+.cal h3{
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 1.1rem;
+    color: black;
+}
+.calculos .cal label{
+    color: black;
+}
+#pesoo{
+    position: absolute;
+border: 0; 
+border-bottom:1px solid rgb(0, 0, 0); 
+top: 240%; 
+left: 225px;
+}
+#pesoo,#estaturaa,#res:focus{
+    outline:none;
+}
+#style-label-cal-esta{
+    margin-top: 30%;
+    margin-left: 30%;   
+}
+#estaturaa{
+    position: absolute;
+    border: 0; 
+    border-bottom:1px solid rgb(0, 0, 0); 
+    top: 240%;  
+    left: 430px;
+ }
+#res{
+    margin-top: 30px;
+    width: 353px;     
+    border: none;  
+    height: 30px;
+    resize: none;
+}
+.cal .boton{
+     opacity: 100;
+    animation: pulsos 1.5s infinite;
+    color: #fff;
+    background: #6ab04c;
+}
+.cal .boton:hover{
+    background: #F24B4B;
+    transition: background-color .3s;
+}
+.metabo{
+    border-left: 1px solid #666262;
+    width: 45%;
+    padding:1rem 0 1rem 4rem;
+}
+.metabo h1{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: black;
+}
+.metabo h2{
+     font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 1.1rem;
+    color: black;
+}
