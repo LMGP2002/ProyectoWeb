@@ -377,12 +377,12 @@ body, #modal-registro, #modal-registro-iniciar, #modal-olvido{
 }
 .style-registro-numid{
     margin-left: 35px;
-    color: rgb(10, 10, 10);
-    font-weight: lighter;
-   
     
 }
-
+#modal-registro #style-contenido article label{
+    font-weight: lighter;  
+    color: rgb(10, 10, 10);
+}
 .c:focus{
     outline:none;
 }
@@ -394,27 +394,106 @@ body, #modal-registro, #modal-registro-iniciar, #modal-olvido{
     height: 20px;  
     border-bottom:1px solid rgb(0, 0, 0);
 }
-.style-inp-registro:focus{
-    outline:none;
-}
-.style-inp-registro{
-    margin-left: 25px;
+#nombre{
+    position: absolute;
+    margin-left: -5%;
+    width: 17%;  
+    height: 25px;
+    top: 200px;
+    border: 0; 
     color: black;
-    border: 0;
-    width: 72%;
-    height: 20px;  
-    border-bottom:1px solid rgb(0, 0, 0);
+    border-bottom:1px solid rgb(0, 0, 0);    
 }
-.style-inpt-registro:focus{
-    outline:none;
+#style-apellido-registro{
+    position: absolute;
+    margin-left: 22%;
+    top: 27%;
 }
-.style-inpt-registro{
-    margin-left: 52px;
+#apellido{
+    position: absolute;
+    margin-left: 22%;
+    width: 17%;  
+    height: 25px;
+    top: 200px;
+    border: 0; 
     color: black;
-    border: 0;
-    width: 72%;
-    height: 20px; 
-    border-bottom:1px solid rgb(0, 0, 0);
+    border-bottom:1px solid rgb(0, 0, 0);  
+}
+#style-edad-registro{
+    position: absolute;
+    margin-left: 35px;
+    top: 40%;
+}
+#edad{
+    position: absolute;
+    margin-left: 34px;
+    width: 17%;  
+    height: 25px;
+    top: 270px;
+    border: 0; 
+    color: black;
+    border-bottom:1px solid rgb(0, 0, 0);  
+}
+#style-sexo-registro{
+    position: absolute;
+    margin-left: 22%;
+    top: 40%;
+}
+#sexo{
+    position: absolute;
+    margin-left: 22%;
+    width: 17%;  
+    height: 25px;
+    top: 270px;
+    border: 0; 
+    color: black;
+    border-bottom:1px solid rgb(0, 0, 0);   
+}
+#style-peso-registro{
+    position: absolute;
+    margin-left: 35px;
+    top: 52%; 
+}
+
+#peso{
+    position: absolute;
+    margin-left: 34px;
+    width: 17%;  
+    height: 25px;
+    top: 56%;
+    border: 0; 
+    color: black;
+    border-bottom:1px solid rgb(0, 0, 0);    
+}
+#style-estatura-registro{
+    position: absolute;
+    margin-left: 22%;
+    top: 52%;    
+}
+#estatura{
+    position: absolute;
+    margin-left: 22%;
+    width: 17%;  
+    height: 25px;
+    top: 56%;
+    border: 0; 
+    color: black;
+    border-bottom:1px solid rgb(0, 0, 0);    
+}
+#style-contra-registro{
+    position: absolute;
+    margin-left: 35px;
+    top: 65%;  
+}
+.style-contra-regis{
+    position: absolute;
+    margin-left: 35px;
+    width: 37%;  
+    height: 25px;
+    top: 70%;
+    border: 0; 
+    color: black;
+    border-bottom:1px solid rgb(0, 0, 0); 
 }
 #alimentacion{
     margin-left: 10px;
@@ -425,6 +504,7 @@ body, #modal-registro, #modal-registro-iniciar, #modal-olvido{
     border-bottom:1px solid rgb(0, 0, 0);
     
 }
+
 #style-btn-registro{
     background: #6ab04c;
    border:none;
@@ -484,3 +564,4 @@ body, #modal-registro, #modal-registro-iniciar, #modal-olvido{
     font-size: 22px;
     color: black;
 }
+
