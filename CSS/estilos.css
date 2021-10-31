@@ -383,9 +383,10 @@ body, #modal-registro, #modal-registro-iniciar, #modal-olvido{
     font-weight: lighter;  
     color: rgb(10, 10, 10);
 }
-.c:focus{
+#modal-registro #style-contenido article input{
     outline:none;
 }
+
 .c{
     margin-left: 5px;
     color: black;
@@ -495,12 +496,18 @@ body, #modal-registro, #modal-registro-iniciar, #modal-olvido{
     color: black;
     border-bottom:1px solid rgb(0, 0, 0); 
 }
+.style-registro-aliemntacion{
+    position: absolute;
+    margin-left: 35px;
+    top: 77%;  
+}
 #alimentacion{
-    margin-left: 10px;
+    margin-left: 35px;
     color: black;
+    margin-top: 3%;
     border: 0;     
-    width: 68%;
-    height: 20px;
+    width: 88%; 
+    height: 30px;
     border-bottom:1px solid rgb(0, 0, 0);
     
 }
@@ -517,6 +524,7 @@ body, #modal-registro, #modal-registro-iniciar, #modal-olvido{
     text-decoration: none;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, .5);
     margin-left: calc(100% - 55%);
+    margin-top: -5%;
     
 }
 #style-btn-registro:hover{
