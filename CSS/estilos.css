@@ -531,6 +531,10 @@ body, #modal-registro, #modal-registro-iniciar, #modal-olvido{
     cursor: pointer;
 }
 /* olvido de contra */
+#modal-olvido #style-contenido-olvido article label, input{
+    font-weight: lighter;  
+    color: rgb(10, 10, 10);
+}
 #modal-olvido{
     color: black;
 	top: 0;
@@ -543,12 +547,12 @@ body, #modal-registro, #modal-registro-iniciar, #modal-olvido{
     
 }
 #style-contenido-olvido{
-    width: 570px;
-    height: 600px;   
+    width: 565px;
+    height: 470px;   
     margin-left: calc(50% - 285px);    
     background: white; /* fallback for old browsers */
-    margin-top: 12px; 
-
+    margin-top: 89px;  
+   
     }
     #modal-olvido:target{
         display: block;
@@ -572,4 +576,62 @@ body, #modal-registro, #modal-registro-iniciar, #modal-olvido{
     font-size: 22px;
     color: black;
 }
-
+#style-olvido-cc{
+    position: absolute;
+    margin-left: 44px;
+    top:32% ;
+}
+.style-olvido-cc-in{
+    position: absolute;
+    margin-left: 44px;
+    width: 35%;  
+    height: 25px;
+    top: 37%;
+    border: 0; 
+    color: black;
+    border-bottom:1px solid rgb(0, 0, 0);    
+}
+#style-olvio-contra{
+    position: absolute;
+    margin-left: 44px;
+    top: 43%; 
+}
+.style-olvido-contra-in{
+    position: absolute;
+    margin-left: 44px;
+    width: 35%; 
+    height: 25px;
+    top: 48%;
+    border: 0; 
+    color: black;
+    border-bottom:1px solid rgb(0, 0, 0);  
+}
+#style-olvio-contra-confir{
+    position: absolute;
+    margin-left: 44px;
+    top: 54%;  
+}
+.style-olvido-contra-in-nue{
+    position: absolute;
+    margin-left: 44px;
+    width: 35%; 
+    height: 25px;
+    top: 59%;
+    border: 0; 
+    color: black;
+    border-bottom:1px solid rgb(0, 0, 0);  
+}
+#style-buto-olvido{
+    background: #6ab04c;
+    border:none;
+     display: inline-block;    
+     padding: 10px 10px;
+     border-radius: .25rem;
+     min-width: 90px;
+     font-size: 15px;
+     text-align: center;
+     text-decoration: none;
+     box-shadow: 0 0 0 0 rgba(0, 0, 0, .5);
+     margin-left: calc(100% - 59%);
+  margin-top: 45%;
+}

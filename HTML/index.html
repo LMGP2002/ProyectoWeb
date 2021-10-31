@@ -111,7 +111,7 @@
                 <input type="number" id="estatura" name="estatura" >
                 <br> <br>
                 <label id="style-contra-registro" >Contraseña</label>
-                <input type="text" id="contraseña" name="contraseña" class="style-contra-regis">                
+                <input type="password" id="contraseña" name="contraseña" class="style-contra-regis">                
                 <label class="style-registro-aliemntacion">Alimentación</label><br>
                 <input type="text" id="alimentacion" name="alimentacion" class="alimentacion">
                 <br><br>
@@ -124,12 +124,15 @@
             <header id="style-registro-header-olvido">
                 <a href="#" id="cerrar-olvido">X</a>
             </header>
-            <article>
+            <article>  <br>             
                 <h2 id="style-olvido-h2">Restablecer contraseña</h2>
-                <label>Digite su número de indentificación</label>
-                <input id="cc">
-                <label>Digite su nueva contraseña</label>
-                <input id="cc">
+                <br><label id="style-olvido-cc">Digite su número de identificación</label>
+                <input id="cc" name="cc" class="style-olvido-cc-in">
+                <label id="style-olvio-contra">Digite su nueva contraseña</label>
+                <input id="contraseña" name="contraseña" class="style-olvido-contra-in">
+                <label id="style-olvio-contra-confir">Confirmar contraseña nueva</label>
+                <input id="contraseña" name="contraseña" class="style-olvido-contra-in-nue">
+                <button id="style-buto-olvido">Guardar</button>
             </article>
         </div>
     </div>
