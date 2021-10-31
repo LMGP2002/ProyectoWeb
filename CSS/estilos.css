@@ -288,6 +288,7 @@ body, #modal-registro, #modal-registro-iniciar{
     text-align: center;
     text-decoration: none;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, .5); 
+   
 }
 
 .style-input-iniciar:focus{
@@ -421,7 +422,7 @@ body, #modal-registro, #modal-registro-iniciar{
     background: linear-gradient(102deg, #4551b5 40%, #543fd7 60%);
    border:none;
     display: inline-block;
-    margin-left: 45px;
+    
     padding: 10px 10px;
     border-radius: .25rem;
     min-width: 90px;
@@ -429,5 +430,6 @@ body, #modal-registro, #modal-registro-iniciar{
     text-align: center;
     text-decoration: none;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, .5);
+    margin-left: calc(100% - 55%);
     
 }
