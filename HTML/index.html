@@ -115,27 +115,29 @@
                 <input type="number" id="cc" name="cc" class="c">
                 <br><br>
                 <label class="style-registro-numid">Nombre</label>
-                <input type="text" id="nombre" name="nombre" class="style-inp-registro">
+                <input type="text" id="nombre" name="nombre">
                 <br>
                 <br>
-                <label class="style-registro-numid">Apellido</label>
-                <input type="text" id="apellido" name="apellido" class="style-inp-registro">
+                <label id="style-apellido-registro">Apellido</label>
+                <input type="text" id="apellido" name="apellido" >
                 <br><br>
-                <label class="style-registro-numid">Edad</label>
-                <input type="number" id="edad" name="edad" class="style-inpt-registro">
+                <label id="style-edad-registro">Edad</label>
+                <input type="number" id="edad" name="edad" >
                 <br><br>
-                <label class="style-registro-numid">Sexo</label>
-                <input type="text" id="sexo" name="sexo" class="style-inpt-registro">
+                <label id="style-sexo-registro">Sexo</label>
+                <input type="text" id="sexo" name="sexo" >
                 <br><br>
-                <label class="style-registro-numid">Peso</label>
-                <input type="number" id="peso" name="peso" class="style-inpt-registro">
+                <label id="style-peso-registro">Peso</label>
+                <input type="number" id="peso" name="peso" >
                 <br><br>
-                <label class="style-registro-numid">Estatura</label>
-                <input type="number" id="estatura" name="estatura" class="style-inp-registro">
+                <label id="style-estatura-registro">Estatura</label>
+                <input type="number" id="estatura" name="estatura" >
                 <br> <br>
-                <label class="style-registro-numid">Alimentación</label>
+                <label id="style-contra-registro" >Contraseña</label>
+                <input type="password" id="contraseña" name="contraseña" class="style-contra-regis">                
+                <label class="style-registro-aliemntacion">Alimentación</label><br>
                 <input type="text" id="alimentacion" name="alimentacion" class="alimentacion">
-                <br><br><br>
+                <br><br>
                <button id="style-btn-registro" type="submit">Guardar</button>
             </article>
         </div>
@@ -145,8 +147,15 @@
             <header id="style-registro-header-olvido">
                 <a href="#" id="cerrar-olvido">X</a>
             </header>
-            <article>
-                <h2 id="style-olvido-h2">olvidis</h2>
+            <article>  <br>             
+                <h2 id="style-olvido-h2">Restablecer contraseña</h2>
+                <br><label id="style-olvido-cc">Digite su número de identificación</label>
+                <input id="cc" name="cc" class="style-olvido-cc-in">
+                <label id="style-olvio-contra">Digite su nueva contraseña</label>
+                <input id="contraseña" name="contraseña" class="style-olvido-contra-in">
+                <label id="style-olvio-contra-confir">Confirmar contraseña nueva</label>
+                <input id="contraseña" name="contraseña" class="style-olvido-contra-in-nue">
+                <button id="style-buto-olvido">Guardar</button>
             </article>
         </div>
     </div>

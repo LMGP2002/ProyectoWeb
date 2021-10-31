@@ -521,15 +521,16 @@ body, #modal-registro, #modal-registro-iniciar, #modal-olvido{
 }
 .style-registro-numid{
     margin-left: 35px;
-    color: rgb(10, 10, 10);
-    font-weight: lighter;
-   
     
 }
-
-.c:focus{
+#modal-registro #style-contenido article label{
+    font-weight: lighter;  
+    color: rgb(10, 10, 10);
+}
+#modal-registro #style-contenido article input{
     outline:none;
 }
+
 .c{
     margin-left: 5px;
     color: black;
@@ -538,37 +539,123 @@ body, #modal-registro, #modal-registro-iniciar, #modal-olvido{
     height: 20px;  
     border-bottom:1px solid rgb(0, 0, 0);
 }
-.style-inp-registro:focus{
-    outline:none;
-}
-.style-inp-registro{
-    margin-left: 25px;
+#nombre{
+    position: absolute;
+    margin-left: -5%;
+    width: 17%;  
+    height: 25px;
+    top: 200px;
+    border: 0; 
     color: black;
-    border: 0;
-    width: 72%;
-    height: 20px;  
-    border-bottom:1px solid rgb(0, 0, 0);
+    border-bottom:1px solid rgb(0, 0, 0);    
 }
-.style-inpt-registro:focus{
-    outline:none;
+#style-apellido-registro{
+    position: absolute;
+    margin-left: 22%;
+    top: 27%;
 }
-.style-inpt-registro{
-    margin-left: 52px;
+#apellido{
+    position: absolute;
+    margin-left: 22%;
+    width: 17%;  
+    height: 25px;
+    top: 200px;
+    border: 0; 
     color: black;
-    border: 0;
-    width: 72%;
-    height: 20px; 
-    border-bottom:1px solid rgb(0, 0, 0);
+    border-bottom:1px solid rgb(0, 0, 0);  
+}
+#style-edad-registro{
+    position: absolute;
+    margin-left: 35px;
+    top: 40%;
+}
+#edad{
+    position: absolute;
+    margin-left: 34px;
+    width: 17%;  
+    height: 25px;
+    top: 270px;
+    border: 0; 
+    color: black;
+    border-bottom:1px solid rgb(0, 0, 0);  
+}
+#style-sexo-registro{
+    position: absolute;
+    margin-left: 22%;
+    top: 40%;
+}
+#sexo{
+    position: absolute;
+    margin-left: 22%;
+    width: 17%;  
+    height: 25px;
+    top: 270px;
+    border: 0; 
+    color: black;
+    border-bottom:1px solid rgb(0, 0, 0);   
+}
+#style-peso-registro{
+    position: absolute;
+    margin-left: 35px;
+    top: 52%; 
+}
+
+#peso{
+    position: absolute;
+    margin-left: 34px;
+    width: 17%;  
+    height: 25px;
+    top: 56%;
+    border: 0; 
+    color: black;
+    border-bottom:1px solid rgb(0, 0, 0);    
+}
+#style-estatura-registro{
+    position: absolute;
+    margin-left: 22%;
+    top: 52%;    
+}
+#estatura{
+    position: absolute;
+    margin-left: 22%;
+    width: 17%;  
+    height: 25px;
+    top: 56%;
+    border: 0; 
+    color: black;
+    border-bottom:1px solid rgb(0, 0, 0);    
+}
+#style-contra-registro{
+    position: absolute;
+    margin-left: 35px;
+    top: 65%;  
+}
+.style-contra-regis{
+    position: absolute;
+    margin-left: 35px;
+    width: 37%;  
+    height: 25px;
+    top: 70%;
+    border: 0; 
+    color: black;
+    border-bottom:1px solid rgb(0, 0, 0); 
+}
+.style-registro-aliemntacion{
+    position: absolute;
+    margin-left: 35px;
+    top: 77%;  
 }
 #alimentacion{
-    margin-left: 10px;
+    margin-left: 35px;
     color: black;
+    margin-top: 3%;
     border: 0;     
-    width: 68%;
-    height: 20px;
+    width: 88%; 
+    height: 30px;
     border-bottom:1px solid rgb(0, 0, 0);
     
 }
+
 #style-btn-registro{
     background: #6ab04c;
    border:none;
@@ -581,12 +668,17 @@ body, #modal-registro, #modal-registro-iniciar, #modal-olvido{
     text-decoration: none;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, .5);
     margin-left: calc(100% - 55%);
+    margin-top: -5%;
     
 }
 #style-btn-registro:hover{
     cursor: pointer;
 }
 /* olvido de contra */
+#modal-olvido #style-contenido-olvido article label, input{
+    font-weight: lighter;  
+    color: rgb(10, 10, 10);
+}
 #modal-olvido{
     color: black;
 	top: 0;
@@ -599,12 +691,12 @@ body, #modal-registro, #modal-registro-iniciar, #modal-olvido{
     
 }
 #style-contenido-olvido{
-    width: 570px;
-    height: 600px;   
+    width: 565px;
+    height: 470px;   
     margin-left: calc(50% - 285px);    
     background: white; /* fallback for old browsers */
-    margin-top: 12px; 
-
+    margin-top: 89px;  
+   
     }
     #modal-olvido:target{
         display: block;
@@ -627,4 +719,63 @@ body, #modal-registro, #modal-registro-iniciar, #modal-olvido{
     text-align: center;
     font-size: 22px;
     color: black;
+}
+#style-olvido-cc{
+    position: absolute;
+    margin-left: 44px;
+    top:32% ;
+}
+.style-olvido-cc-in{
+    position: absolute;
+    margin-left: 44px;
+    width: 35%;  
+    height: 25px;
+    top: 37%;
+    border: 0; 
+    color: black;
+    border-bottom:1px solid rgb(0, 0, 0);    
+}
+#style-olvio-contra{
+    position: absolute;
+    margin-left: 44px;
+    top: 43%; 
+}
+.style-olvido-contra-in{
+    position: absolute;
+    margin-left: 44px;
+    width: 35%; 
+    height: 25px;
+    top: 48%;
+    border: 0; 
+    color: black;
+    border-bottom:1px solid rgb(0, 0, 0);  
+}
+#style-olvio-contra-confir{
+    position: absolute;
+    margin-left: 44px;
+    top: 54%;  
+}
+.style-olvido-contra-in-nue{
+    position: absolute;
+    margin-left: 44px;
+    width: 35%; 
+    height: 25px;
+    top: 59%;
+    border: 0; 
+    color: black;
+    border-bottom:1px solid rgb(0, 0, 0);  
+}
+#style-buto-olvido{
+    background: #6ab04c;
+    border:none;
+     display: inline-block;    
+     padding: 10px 10px;
+     border-radius: .25rem;
+     min-width: 90px;
+     font-size: 15px;
+     text-align: center;
+     text-decoration: none;
+     box-shadow: 0 0 0 0 rgba(0, 0, 0, .5);
+     margin-left: calc(100% - 59%);
+  margin-top: 45%;
 }
