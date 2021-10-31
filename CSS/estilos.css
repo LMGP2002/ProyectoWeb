@@ -290,6 +290,9 @@ body, #modal-registro, #modal-registro-iniciar{
     box-shadow: 0 0 0 0 rgba(0, 0, 0, .5); 
    
 }
+.style-button-iniciar:hover{
+    cursor: pointer;
+}
 
 .style-input-iniciar:focus{
     outline:none;
@@ -374,6 +377,7 @@ body, #modal-registro, #modal-registro-iniciar{
 }
 .style-registro-numid{
     margin-left: 35px;
+    
 }
 
 .c:focus{
