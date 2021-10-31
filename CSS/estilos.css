@@ -335,7 +335,7 @@ body, #modal-registro, #modal-registro-iniciar{
 }
 /* modal registro */
 #modal-registro{
-    
+    color: black;
 	top: 0;
 	left: 0;
     background: rgba(19, 17, 17, 0.74);
@@ -347,13 +347,11 @@ body, #modal-registro, #modal-registro-iniciar{
 }
 #style-contenido{
     width: 570px;
-    height: 600px;
-    color: black;
+    height: 600px;   
     margin-left: calc(50% - 285px);    
-    background: #232526; 
-    background: -webkit-linear-gradient(to bottom, #232526, #414345);
-    background: linear-gradient(to bottom, #232526, #414345); 
- margin-top: 12px;   
+    background: white; /* fallback for old browsers */
+    margin-top: 12px; 
+
     }
     #modal-registro:target{
         display: block;
@@ -362,6 +360,7 @@ body, #modal-registro, #modal-registro-iniciar{
 
 #cerrar {
     margin-left: calc(100% - 27px);
+    color: black;
     
 }
 #style-registro-header {
@@ -374,9 +373,11 @@ body, #modal-registro, #modal-registro-iniciar{
 #style-registro-h2{
     text-align: center;
     font-size: 22px;
+    color: black;
 }
 .style-registro-numid{
     margin-left: 35px;
+    color: rgb(10, 10, 10);
     
 }
 
@@ -386,10 +387,10 @@ body, #modal-registro, #modal-registro-iniciar{
 .c{
     margin-left: 5px;
     color: black;
-    border: 0;
-    border-radius: 5px;
+    border: 0;  
     width: 49%;
     height: 30px;  
+    border-bottom:1px solid rgb(0, 0, 0);
 }
 .style-inp-registro:focus{
     outline:none;
@@ -398,9 +399,9 @@ body, #modal-registro, #modal-registro-iniciar{
     margin-left: 25px;
     color: black;
     border: 0;
-    border-radius: 5px;
     width: 72%;
     height: 30px;  
+    border-bottom:1px solid rgb(0, 0, 0);
 }
 .style-inpt-registro:focus{
     outline:none;
@@ -409,24 +410,24 @@ body, #modal-registro, #modal-registro-iniciar{
     margin-left: 52px;
     color: black;
     border: 0;
-    border-radius: 5px;
     width: 72%;
     height: 30px; 
+    border-bottom:1px solid rgb(0, 0, 0);
 }
 #alimentacion{
     margin-left: 10px;
     color: black;
     border: 0;
-    border-radius: 5px; 
+     
     width: 68%;
     height: 45px;
+    border-bottom:1px solid rgb(0, 0, 0);
     
 }
 #style-btn-registro{
-    background: linear-gradient(102deg, #4551b5 40%, #543fd7 60%);
+    background: #6ab04c;
    border:none;
-    display: inline-block;
-    
+    display: inline-block;    
     padding: 10px 10px;
     border-radius: .25rem;
     min-width: 90px;
@@ -436,4 +437,7 @@ body, #modal-registro, #modal-registro-iniciar{
     box-shadow: 0 0 0 0 rgba(0, 0, 0, .5);
     margin-left: calc(100% - 55%);
     
+}
+#style-btn-registro:hover{
+    cursor: pointer;
 }
