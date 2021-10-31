@@ -378,6 +378,8 @@ body, #modal-registro, #modal-registro-iniciar, #modal-olvido{
 .style-registro-numid{
     margin-left: 35px;
     color: rgb(10, 10, 10);
+    font-weight: lighter;
+   
     
 }
 
@@ -389,7 +391,7 @@ body, #modal-registro, #modal-registro-iniciar, #modal-olvido{
     color: black;
     border: 0;  
     width: 49%;
-    height: 30px;  
+    height: 20px;  
     border-bottom:1px solid rgb(0, 0, 0);
 }
 .style-inp-registro:focus{
@@ -400,7 +402,7 @@ body, #modal-registro, #modal-registro-iniciar, #modal-olvido{
     color: black;
     border: 0;
     width: 72%;
-    height: 30px;  
+    height: 20px;  
     border-bottom:1px solid rgb(0, 0, 0);
 }
 .style-inpt-registro:focus{
@@ -411,16 +413,15 @@ body, #modal-registro, #modal-registro-iniciar, #modal-olvido{
     color: black;
     border: 0;
     width: 72%;
-    height: 30px; 
+    height: 20px; 
     border-bottom:1px solid rgb(0, 0, 0);
 }
 #alimentacion{
     margin-left: 10px;
     color: black;
-    border: 0;
-     
+    border: 0;     
     width: 68%;
-    height: 45px;
+    height: 20px;
     border-bottom:1px solid rgb(0, 0, 0);
     
 }
