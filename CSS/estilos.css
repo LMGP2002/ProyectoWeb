@@ -811,10 +811,11 @@ background: #B4B3B3; /* fallback for old browsers */
     position: absolute;
     border: 0; 
     border-bottom:1px solid rgb(0, 0, 0); 
-    top: 255%;  
+    top: 255%; 
     left: 430px;
     background: #B4B3B3; /* fallback for old browsers */
- }
+           
+}
 #res{
     margin-top: 30px;
     background: #B4B3B3; /* fallback for old browsers */
@@ -859,7 +860,92 @@ background: #B4B3B3; /* fallback for old browsers */
     margin-bottom: 1.1rem;
     color: black;
 }
+#sex{
+    position: absolute;
+    top: 253%;
+    left: 58%;
+    border: 0;
+    border-bottom:1px solid rgb(0, 0, 0); 
+    background: #B4B3B3; /* fallback for old browsers */
+   
+}
+#style-metabo-peso{
+    position: absolute;
+    left: 73%;
+    top: 249%;
+}
+#style-metabo-sex{
+    position: absolute;
+    top: 249%;
+}
+#pes{
+    position: absolute;
+    border: 0; 
+    border-bottom:1px solid rgb(0, 0, 0); 
+    top: 253%; 
+    left: 73%;
+    background: #B4B3B3; 
+}
 
+  
+#style-metabo-esta{
+    position: absolute;
+    left: 58%;
+    top: 258%;
+}
+#esta{
+    position: absolute;
+    top: 262%;
+    left: 58%;      
+    border: 0;
+    border-bottom:1px solid rgb(0, 0, 0); 
+    background: #B4B3B3; /* fallback for old browsers */
+      
+}
+#style-metabo-edad{
+    position: absolute;
+    left: 73%;
+    top: 258%;
+}
+#ed{
+    position: absolute;
+    top: 262%;
+    left: 73%;   
+    border: 0;
+    border-bottom:1px solid rgb(0, 0, 0); 
+    background: #B4B3B3; /* fallback for old browsers */
+   
+}
+#resmeta{    
+    /* background: #B4B3B3; fallback for old browsers */
+    position: absolute;
+    width: 353px;     
+    border: none;  
+    height: 30px;
+    resize: none;
+    color: black;  
+    top: 266%;
+    background: #B4B3B3; /* fallback for old browsers */
+    border-bottom:1px solid rgb(0, 0, 0);
+    border: 0;   
+}
+#metaBasal{
+    background: #6ab04c;
+    display: inline-block;
+    padding: 10px 10px;
+    border-radius: .25rem;   
+    font-size: 22px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, .5); 
+    border: none;
+}
+#metaBasal:hover{
+    cursor: pointer;
+}
+#sex, #pes, #esta, #ed:focus{
+    outline:none;
+} 
 /* quitar autoincrementar en inputs tipo number */
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
