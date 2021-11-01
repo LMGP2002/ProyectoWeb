@@ -839,24 +839,28 @@ background: #B4B3B3; /* fallback for old browsers */
 .but:hover{
     cursor: pointer;
 }
-
+/* metabolismo basal */
 .metabo{
     border-left: 1px solid #666262;
     width: 45%;
     padding:1rem 0 1rem 4rem;
 }
-.metabo h1{
-    font-size: 2rem;
-    margin-bottom: 2rem;
+.metabo label, input, textarea{
     color: black;
 }
-.metabo h2{
-     font-size: 1.3rem;
+.metabo h1{
+    font-size: 2.3rem;
+    margin-bottom: 1.1rem;
+    color: black;
+}
+.metabo h3{
+     font-size: 1.2rem;
     font-weight: 300;
     margin-bottom: 1.1rem;
     color: black;
 }
 
+<<<<<<< HEAD
 /* Instructores section */
 .instructor_container{
     height: 100vh;
@@ -895,4 +899,11 @@ background: #B4B3B3; /* fallback for old browsers */
 .instructor3{
     background: #00f;
     clip-path: polygon(100% 0, 100% 0, 100% 100%, 45% 100%);
+=======
+/* quitar autoincrementar en inputs tipo number */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+>>>>>>> 955738601d42d130fa6de898e94bd998073c7450
 }
