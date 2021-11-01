@@ -772,8 +772,8 @@ body, #modal-registro, #modal-registro-iniciar, #modal-olvido{
     justify-content: space-between;
     align-items: center;
     padding: 8rem 14rem;
-    background: white;
-}
+   background: #B4B3B3; /* fallback for old browsers */
+  }
 .cal{
     width: 45%;
 }
@@ -798,7 +798,8 @@ border: 0;
 border-bottom:1px solid rgb(0, 0, 0); 
 top: 255%; 
 left: 225px;
-}
+background: #B4B3B3; /* fallback for old browsers */
+  }
 #pesoo,#estaturaa,#res:focus{
     outline:none;
 }
@@ -812,9 +813,11 @@ left: 225px;
     border-bottom:1px solid rgb(0, 0, 0); 
     top: 255%;  
     left: 430px;
+    background: #B4B3B3; /* fallback for old browsers */
  }
 #res{
     margin-top: 30px;
+    background: #B4B3B3; /* fallback for old browsers */
     width: 353px;     
     border: none;  
     height: 30px;
