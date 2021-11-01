@@ -772,18 +772,23 @@ body, #modal-registro, #modal-registro-iniciar, #modal-olvido{
     justify-content: space-between;
     align-items: center;
     padding: 8rem 14rem;
+<<<<<<< HEAD
     background: #B4B3B3;
 }
+=======
+   background: #B4B3B3; /* fallback for old browsers */
+  }
+>>>>>>> 2864a3f5ea5c6573ebb8f43830971edf0ada3629
 .cal{
     width: 45%;
 }
 
-.cal h1{
+.cal #in{
     font-size: 3.5rem;
     margin-bottom: 1.1rem;
     color: black;
 }
-.cal h3{
+.cal #calcul{
     font-size: 1.3rem;
     font-weight: 300;
     margin-bottom: 1.1rem;
@@ -796,9 +801,10 @@ body, #modal-registro, #modal-registro-iniciar, #modal-olvido{
     position: absolute;
 border: 0; 
 border-bottom:1px solid rgb(0, 0, 0); 
-top: 240%; 
+top: 255%; 
 left: 225px;
-}
+background: #B4B3B3; /* fallback for old browsers */
+  }
 #pesoo,#estaturaa,#res:focus{
     outline:none;
 }
@@ -810,26 +816,35 @@ left: 225px;
     position: absolute;
     border: 0; 
     border-bottom:1px solid rgb(0, 0, 0); 
-    top: 240%;  
+    top: 255%;  
     left: 430px;
+    background: #B4B3B3; /* fallback for old browsers */
  }
 #res{
     margin-top: 30px;
+    background: #B4B3B3; /* fallback for old browsers */
     width: 353px;     
     border: none;  
     height: 30px;
     resize: none;
+    color: black;
 }
-.cal .boton{
-     opacity: 100;
-    animation: pulsos 1.5s infinite;
-    color: #fff;
+
+.but{
     background: #6ab04c;
+    display: inline-block;
+    padding: 10px 10px;
+    border-radius: .25rem;   
+    font-size: 22px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, .5); 
+    border: none;
 }
-.cal .boton:hover{
-    background: #F24B4B;
-    transition: background-color .3s;
+.but:hover{
+    cursor: pointer;
 }
+
 .metabo{
     border-left: 1px solid #666262;
     width: 45%;
