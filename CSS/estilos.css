@@ -332,20 +332,21 @@ body, #modal-registro, #modal-registro-iniciar, #modal-olvido{
 }
 .about-us{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 8rem 14rem;
+    justify-content: center;
     background: #171819;
+    padding:80px 150px 0;
 }
 .uno{
-    width: 45%;
+    width: 40%;
+    margin-right:50px;
 }
 .dos{
     border-left: 1px solid #666262;
-    width: 45%;
-    padding:1rem 0 1rem 4rem;
+    width: 40%;
+    padding:0 0 1rem 4rem;
 }
 .uno h1{
     font-size: 3.5rem;
@@ -766,7 +767,7 @@ body, #modal-registro, #modal-registro-iniciar, #modal-olvido{
 
 .calculos{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
