@@ -11,25 +11,25 @@
 </head>
 
 <body>
-    <header class="header-contenedor" id="header">
+    <header class="header-contenedor disable-select" id="header">
         <nav class="nav">
-            <h2 class="logo disable-select">HardWork</h2>
-            <ul class="disable-select">
-                <li><a class="disable-select" href="#header">Home</a></li>
-                <li><a class="disable-select" href="#about">About us</a></li>
-                <li><a class="disable-select" href="">Contact</a></li>
-                <li><a class="disable-select" href="">Gallery</a></li>
+            <h2 class="logo">HardWork</h2>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#instructores">Trainers</a></li>
+                <li><a href="">Gallery</a></li>
             </ul>
             <div class="container-icons">
-                <a class="modal_users" href="#"><i class="fas fa-user icon disable-select"></i></a>
-                <a href="#"><i id="prueba" class="fab fa-facebook-f icon disable-select"></i></a>
-                <a href="#"><i class="fab fa-youtube icon disable-select"></i></a>
-                <a href="#"><i class="fas fa-shopping-cart icon disable-select"></i></a>
+                <a class="modal_users" href="#"><i class="fas fa-user icon"></i></a>
+                <a href="#"><i class="fab fa-facebook-f icon"></i></a>
+                <a href="#"><i class="fab fa-youtube icon"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart icon"></i></a>
             </div>
         </nav>
-
+        <!-- Modal Users -->
         <div class="modal_container">
-            <div class="modal_content modal_close">
+            <div class="modal_content modal_close disable-select">
                 <div class="transparencia">
                     <a href="" class="close"><i class="fas fa-times equis"></i></a>
                     <div class="modal_mover">
@@ -47,9 +47,9 @@
             </div>
         </div>
         <div class="container-text">
-            <span class="text1 disable-select">welcome to</span>
-            <span class="text2 disable-select">the glory</span>
-            <a class="boton disable-select" href="#modal-registro-iniciar">Login</a>
+            <span class="text1">welcome to</span>
+            <span class="text2">the glory</span>
+            <a class="boton" href="#modal-registro-iniciar">Login</a>
         </div>
         <video class="fondo" src="../Recursos/bg.mp4" loop autoplay muted></video>
         <div class="overlay"></div>
@@ -60,7 +60,7 @@
             <h1>HardWork</h1>
             <h3>¿Quieres empezar a forjar la disciplina en tu vida?</h3>
             <p>Contamos con el equipamento más moderno, planes alimenticios, rutinas de ejercicios y los mejores
-                instructores para que puedas conseguir la mejor versión de ti. <br><span>¡No esperes más!</span></p>
+                instructores para que puedas conseguir tu mejor versión. <br><span>¡No esperes más!</span></p>
             <a class="boton" href="#modal-registro-iniciar">Únete</a>
         </article>
         <article class="dos">
@@ -184,6 +184,16 @@
                 <textarea id="resmeta"></textarea>
                 <button type="button" onclick="meta()" id="metaBasal">Calcular</button>
             </div>
+        </article>
+    </section>
+
+    <!-- Instructores -->
+    <section class="instructor_container" id="instructores">
+        <h2>Nuestros instructores</h2>
+        <article class="instructor_content">
+            <div class="instructores instructor1"></div>
+            <div class="instructores instructor2"></div>
+            <div class="instructores instructor3"></div>
         </article>
     </section>
     <script src="../JS/funcionamiento.js"></script>
