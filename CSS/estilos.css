@@ -860,21 +860,39 @@ background: #B4B3B3; /* fallback for old browsers */
 /* Instructores section */
 .instructor_container{
     height: 100vh;
+    max-height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
     background-color:#585555;
+    padding-top:60px;
 }
 .instructor_content{
     position: relative;
     width: 800px;
-    height: 50px;
+    height: 400px;
     background: #222;
 }
 .instructores{
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.instructor1{
+    background: #f00;
+    clip-path: polygon(0 0, 55% 0, 20% 100%, 0% 100%);
+}
+.instructor2{
+    background: #0f0;
+    clip-path: polygon(55% 0, 100% 0, 45% 100%, 20% 100%);
+}
+.instructor3{
+    background: #00f;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 45% 100%);
 }
