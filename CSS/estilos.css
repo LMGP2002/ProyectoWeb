@@ -772,7 +772,7 @@ body, #modal-registro, #modal-registro-iniciar, #modal-olvido{
     justify-content: space-between;
     align-items: center;
     padding: 8rem 14rem;
-    background: white;
+    background: #B4B3B3;
 }
 .cal{
     width: 45%;
