@@ -778,12 +778,12 @@ body, #modal-registro, #modal-registro-iniciar, #modal-olvido{
     width: 45%;
 }
 
-.cal h1{
+.cal #in{
     font-size: 3.5rem;
     margin-bottom: 1.1rem;
     color: black;
 }
-.cal h3{
+.cal #calcul{
     font-size: 1.3rem;
     font-weight: 300;
     margin-bottom: 1.1rem;
@@ -796,7 +796,7 @@ body, #modal-registro, #modal-registro-iniciar, #modal-olvido{
     position: absolute;
 border: 0; 
 border-bottom:1px solid rgb(0, 0, 0); 
-top: 240%; 
+top: 255%; 
 left: 225px;
 }
 #pesoo,#estaturaa,#res:focus{
@@ -810,7 +810,7 @@ left: 225px;
     position: absolute;
     border: 0; 
     border-bottom:1px solid rgb(0, 0, 0); 
-    top: 240%;  
+    top: 255%;  
     left: 430px;
  }
 #res{
