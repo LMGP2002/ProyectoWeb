@@ -856,3 +856,25 @@ background: #B4B3B3; /* fallback for old browsers */
     margin-bottom: 1.1rem;
     color: black;
 }
+
+/* Instructores section */
+.instructor_container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color:#585555;
+}
+.instructor_content{
+    position: relative;
+    width: 800px;
+    height: 50px;
+    background: #222;
+}
+.instructores{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
