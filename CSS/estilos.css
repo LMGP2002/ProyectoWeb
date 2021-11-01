@@ -224,6 +224,7 @@ body, #modal-registro, #modal-registro-iniciar, #modal-olvido{
     position: relative;
     transform: translateY(0);
     transition: transform .8s;
+    overflow: hidden;
 }
 .transparencia{
     display: flex;
@@ -314,20 +315,6 @@ body, #modal-registro, #modal-registro-iniciar, #modal-olvido{
     transform: scale(1.05);
 
 }
-@keyframes pulsos {
-    from{
-        transform: scale(.99);
-        box-shadow: 0 0 0 0 rgba(256, 256, 256, .1);
-    }
-    70%{
-        transform: scale(1);
-        box-shadow: 0 0 0 15px rgba(256, 256, 256, 0);
-    }
-    100%{
-        transform: scale(.99);
-        box-shadow: 0 0 0 0 rgba(256, 256, 256, 0);
-    }
-}
 .close{
     position: absolute;
     top: 5px;
@@ -339,30 +326,27 @@ body, #modal-registro, #modal-registro-iniciar, #modal-olvido{
 }
 
 
-
-
-
-
 /* about-us */
 #registro{
     background-color: black;
 }
 .about-us{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 8rem 14rem;
+    justify-content: center;
     background: #171819;
+    padding:80px 150px 0;
 }
 .uno{
-    width: 45%;
+    width: 40%;
+    margin-right:50px;
 }
 .dos{
     border-left: 1px solid #666262;
-    width: 45%;
-    padding:1rem 0 1rem 4rem;
+    width: 40%;
+    padding:0 0 1rem 4rem;
 }
 .uno h1{
     font-size: 3.5rem;
@@ -783,7 +767,7 @@ body, #modal-registro, #modal-registro-iniciar, #modal-olvido{
 
 .calculos{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
