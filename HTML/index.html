@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HardWork </title>
     <link rel="stylesheet" href="/CSS/estilos.css">
-    <script src="https://kit.fontawesome.com/523f0710e5.js" crossorigin="anonymous"></script>    
+    <script src="https://kit.fontawesome.com/523f0710e5.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -54,7 +54,7 @@
         <video class="fondo" src="../Recursos/bg.mp4" loop autoplay muted></video>
         <div class="overlay"></div>
     </header>
-    
+
     <section class="about-us" id="about">
         <article class="uno">
             <h1>HardWork</h1>
@@ -86,7 +86,7 @@
                 <br><br>
                 <label class="style-label-iniciar">Número de indentificación</label>
                 <br>
-                <input type="number" id="cc" name="cc" class="style-input-iniciar" required>
+                <input  onkeypress="return soloNumeros(event)"  type="number" id="cc" name="cc" class="style-input-iniciar" required>
                 <br><br>
                 <label class="style-label-iniciar">Contraseña</label>
                 <br>
@@ -109,7 +109,7 @@
                 <h2 id="style-registro-h2">Registro</h2>
                 <br>
                 <label class="style-registro-numid">Número de indentificación</label>
-                <input type="number" id="cc" name="cc" class="c">
+                <input  onkeypress="return soloNumeros(event)"  type="number" id="cc" name="cc" class="c">
                 <br><br>
                 <label class="style-registro-numid">Nombre</label>
                 <input type="text" id="nombre" name="nombre">
@@ -119,7 +119,7 @@
                 <input type="text" id="apellido" name="apellido">
                 <br><br>
                 <label id="style-edad-registro">Edad</label>
-                <input type="number" id="edad" name="edad">
+                <input onkeypress="return soloNumeros(event)" type="number" id="edad" name="edad">
                 <br><br>
                 <label id="style-sexo-registro">Sexo</label>
                 <input type="text" id="sexo" name="sexo">
@@ -127,8 +127,8 @@
                 <label id="style-peso-registro">Peso</label>
                 <input type="number" id="peso" name="peso">
                 <br><br>
-                <label id="style-estatura-registro">Estatura</label>
-                <input type="number" id="estatura" name="estatura">
+                <label id="style-estatura-registro">Estatura (Cm)</label>
+                <input  onkeypress="return soloNumeros(event)" type="number" id="estatura" name="estatura">
                 <br> <br>
                 <label id="style-contra-registro">Contraseña</label>
                 <input type="password" id="contraseña" name="contraseña" class="style-contra-regis">
@@ -148,7 +148,7 @@
             <article> <br>
                 <h2 id="style-olvido-h2">Restablecer contraseña</h2>
                 <br><label id="style-olvido-cc">Número de identificación</label>
-                <input id="cc" name="cc" class="style-olvido-cc-in">
+                <input  onkeypress="return soloNumeros(event)" id="cc" name="cc" class="style-olvido-cc-in">
                 <label id="style-olvio-contra">Nueva contraseña</label>
                 <input id="contraseña" name="contraseña" class="style-olvido-contra-in">
                 <label id="style-olvio-contra-confir">Confirmar contraseña nueva</label>
@@ -167,13 +167,22 @@
             <input type="number" id="estaturaa">
             <textarea id="res"></textarea>
             <br>
-            <button type="button"  onclick="imc()" class="but" id="but">Calcular</button>
+            <button type="button" onclick="imc()" class="but" id="but">Calcular</button>
         </article>
         <article class="metabo">
             <h1>Metabolismo basal</h1>
-            <h2>Calcula tu metabolismo basal</h2>
+            <h3>Calcula tu metabolismo basal</h3>
             <div>
-
+                <label>Sexo</label>
+                <input id="sex" required>
+                <label>Peso (Kg)</label>
+                <input type="number" id="pes" required>
+                <label>Estatura (Cm)</label>
+                <input onkeypress="return soloNumeros(event)"  type="number" id="esta" required>
+                <label>Edad</label>
+                <input onkeypress="return soloNumeros(event)" type="number" id="ed" required>
+                <textarea id="resmeta"></textarea>
+                <button type="button" onclick="meta()" id="metaBasal">Calcular</button>
             </div>
         </article>
     </section>
