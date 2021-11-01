@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HardWork </title>
     <link rel="stylesheet" href="/CSS/estilos.css">
-    <script src="https://kit.fontawesome.com/523f0710e5.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/523f0710e5.js" crossorigin="anonymous"></script>    
 </head>
 
 <body>
@@ -28,7 +28,7 @@
             </div>
         </nav>
 
-        <div class="modal_container" >
+        <div class="modal_container">
             <div class="modal_content modal_close">
                 <div class="transparencia">
                     <a href="" class="close"><i class="fas fa-times equis"></i></a>
@@ -46,11 +46,6 @@
                 </div>
             </div>
         </div>
-
-
-       
-
-
         <div class="container-text">
             <span class="text1 disable-select">welcome to</span>
             <span class="text2 disable-select">the glory</span>
@@ -166,22 +161,23 @@
             <h1>IMC</h1>
             <h3>Calcula tu índice de masa corporal</h3>
             <label>Peso (Kg)</label>
-            <input id="pesoo">
+            <input type="number" id="pesoo">
             <label id="style-label-cal-esta">Estatura (Mt)</label>
-            <input id="estaturaa">
-            <textarea id="res" ></textarea>
+            <input type="number" id="estaturaa">
+            <textarea id="res"></textarea>
             <br>
-            <a class="boton" href="#">Calcular</a>
+            <button type="button"  onclick="imc()" class="but" id="but">Calcular</button>
         </article>
         <article class="metabo">
             <h1>Metabolismo basal</h1>
             <h2>Calcula tu metabolismo basal</h2>
             <div>
-                
+
             </div>
         </article>
     </section>
-   <script src="../JS/jquery-3.6.0.min.js"></script>
+    <script src="../JS/funcionamiento.js"></script>
+    <script src="../JS/jquery-3.6.0.min.js"></script>
     <script src="../JS/estilos.js"></script>
 </body>
 
