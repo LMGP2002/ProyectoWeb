@@ -20,9 +20,11 @@ function meta() {
     var ed = document.getElementById("ed").value;
     var r = (10 * pes) + (6.25 * esta) - (5 * ed);
 
-    if (sex == '' || pes == '' || esta == '' || ed == '') {
+    if (sex == '' || pes == '' || esta == '' || ed == '' ) {
         document.getElementById('resmeta').value = `Datos inválidos`;
-    } else if (sex === "mujer") {
+    }else if(esta>210){
+        document.getElementById('resmeta').value = `Estatura inválida`;                
+    }else if (sex === "mujer") {
         var to = r - 161;
         document.getElementById('resmeta').value = `Tu metabolismo basal es ${to} `;
     } else if (sex == "hombre") {
