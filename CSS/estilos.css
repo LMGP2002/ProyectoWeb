@@ -9,6 +9,27 @@
     text-decoration: none;
     
 }
+/* quitar autoincrementar en inputs tipo number */
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> 94c5544746b68c818846f5c25e2bd7df450cb3e0
+=======
+>>>>>>> 94c5544746b68c818846f5c25e2bd7df450cb3e0
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 94c5544746b68c818846f5c25e2bd7df450cb3e0
+=======
+
+>>>>>>> 94c5544746b68c818846f5c25e2bd7df450cb3e0
 body, #modal-registro, #modal-registro-iniciar, #modal-olvido{
     width: 100%;
     height: 100vh;
@@ -811,10 +832,11 @@ background: #B4B3B3; /* fallback for old browsers */
     position: absolute;
     border: 0; 
     border-bottom:1px solid rgb(0, 0, 0); 
-    top: 255%;  
+    top: 255%; 
     left: 430px;
     background: #B4B3B3; /* fallback for old browsers */
- }
+           
+}
 #res{
     margin-top: 30px;
     background: #B4B3B3; /* fallback for old browsers */
@@ -859,51 +881,175 @@ background: #B4B3B3; /* fallback for old browsers */
     margin-bottom: 1.1rem;
     color: black;
 }
+#sex{
+    position: absolute;
+    top: 253%;
+    left: 58%;
+    border: 0;
+    border-bottom:1px solid rgb(0, 0, 0); 
+    background: #B4B3B3; /* fallback for old browsers */
+   
+}
+#style-metabo-peso{
+    position: absolute;
+    left: 73%;
+    top: 249%;
+}
+#style-metabo-sex{
+    position: absolute;
+    top: 249%;
+}
+#pes{
+    position: absolute;
+    border: 0; 
+    border-bottom:1px solid rgb(0, 0, 0); 
+    top: 253%; 
+    left: 73%;
+    background: #B4B3B3; 
+}
 
 <<<<<<< HEAD
-/* Instructores section */
-.instructor_container{
+<<<<<<< HEAD
+/* Planes section */
+.Planes_container{
     height: 100vh;
-    max-height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
-    gap: 20px;
-    background-color:#585555;
-    padding-top:60px;
+    background: #171819;
 }
-.instructor_content{
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 24px;
+    max-width: 1200px;
+    width: 100%;
+}
+.card{
     position: relative;
-    width: 800px;
-    height: 400px;
-    background: #222;
+    list-style: none;
+    height: 450px;
 }
-.instructores{
+
+.background_card{
     position: absolute;
     top: 0;
     left: 0;
+    bottom: 0;
+    right: 0;
     width: 100%;
     height: 100%;
-    transition: 0.5s;
+    object-fit: cover;
+    
 }
-.instructor1{
-    background: #f00;
-    clip-path: polygon(0 0, 55% 0, 20% 100%, 0% 100%);
-}
-.instructor2{
-    background: #0f0;
-    clip-path: polygon(55% 0, 100% 0, 45% 100%, 20% 100%);
-}
-.instructor3{
-    background: #00f;
-    clip-path: polygon(100% 0, 100% 0, 100% 100%, 45% 100%);
 =======
-/* quitar autoincrementar en inputs tipo number */
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
->>>>>>> 955738601d42d130fa6de898e94bd998073c7450
+  
+#style-metabo-esta{
+    position: absolute;
+    left: 58%;
+    top: 258%;
 }
+#esta{
+    position: absolute;
+    top: 262%;
+    left: 58%;      
+    border: 0;
+    border-bottom:1px solid rgb(0, 0, 0); 
+    background: #B4B3B3; /* fallback for old browsers */
+      
+}
+#style-metabo-edad{
+    position: absolute;
+    left: 73%;
+    top: 258%;
+}
+#ed{
+    position: absolute;
+    top: 262%;
+    left: 73%;   
+    border: 0;
+    border-bottom:1px solid rgb(0, 0, 0); 
+    background: #B4B3B3; /* fallback for old browsers */
+   
+}
+#resmeta{    
+    /* background: #B4B3B3; fallback for old browsers */
+    position: absolute;
+    width: 353px;     
+    border: none;  
+    height: 30px;
+    resize: none;
+    color: black;  
+    top: 266%;
+    background: #B4B3B3; /* fallback for old browsers */
+    border-bottom:1px solid rgb(0, 0, 0);
+    border: 0;   
+}
+=======
+  
+#style-metabo-esta{
+    position: absolute;
+    left: 58%;
+    top: 258%;
+}
+#esta{
+    position: absolute;
+    top: 262%;
+    left: 58%;      
+    border: 0;
+    border-bottom:1px solid rgb(0, 0, 0); 
+    background: #B4B3B3; /* fallback for old browsers */
+      
+}
+#style-metabo-edad{
+    position: absolute;
+    left: 73%;
+    top: 258%;
+}
+#ed{
+    position: absolute;
+    top: 262%;
+    left: 73%;   
+    border: 0;
+    border-bottom:1px solid rgb(0, 0, 0); 
+    background: #B4B3B3; /* fallback for old browsers */
+   
+}
+#resmeta{    
+    /* background: #B4B3B3; fallback for old browsers */
+    position: absolute;
+    width: 353px;     
+    border: none;  
+    height: 30px;
+    resize: none;
+    color: black;  
+    top: 266%;
+    background: #B4B3B3; /* fallback for old browsers */
+    border-bottom:1px solid rgb(0, 0, 0);
+    border: 0;   
+}
+>>>>>>> 94c5544746b68c818846f5c25e2bd7df450cb3e0
+#metaBasal{
+    background: #6ab04c;
+    display: inline-block;
+    padding: 10px 10px;
+    border-radius: .25rem;   
+    font-size: 22px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, .5); 
+    border: none;
+}
+#metaBasal:hover{
+    cursor: pointer;
+}
+#sex, #pes, #esta, #ed:focus{
+    outline:none;
+} 
+
+
+<<<<<<< HEAD
+>>>>>>> 94c5544746b68c818846f5c25e2bd7df450cb3e0
+=======
+>>>>>>> 94c5544746b68c818846f5c25e2bd7df450cb3e0

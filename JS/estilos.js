@@ -8,6 +8,7 @@ document.addEventListener('scroll',()=>{
     if(scroll_position>140){
         nav.style.backgroundColor='#222';
     }else nav.style.backgroundColor='transparent';
+
 });
 
 // código para el Smooth Scroll
@@ -18,7 +19,7 @@ $(document).ready(function(){
         var hash = this.hash;
         $('html, body').animate({
           scrollTop: $(hash).offset().top
-        }, 330, function(){
+        }, 500, function(){
           window.location.hash = hash;
         });
       } 
@@ -52,4 +53,6 @@ window.addEventListener('click',(e)=>{
         close();
     }
 });
+
+
 

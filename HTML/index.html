@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HardWork </title>
-    <link rel="stylesheet" href="/CSS/estilos.css">
+    <link rel="stylesheet" href="../CSS/estilos.css">
     <script src="https://kit.fontawesome.com/523f0710e5.js" crossorigin="anonymous"></script>
 </head>
 
@@ -17,7 +17,7 @@
             <ul>
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About us</a></li>
-                <li><a href="#instructores">Trainers</a></li>
+                <li><a href="#plans">Plans</a></li>
                 <li><a href="">Gallery</a></li>
             </ul>
             <div class="container-icons">
@@ -34,7 +34,7 @@
                     <a href="" class="close"><i class="fas fa-times equis"></i></a>
                     <div class="modal_mover">
                         <h2 class="modal_title">Your user</h2>
-                        <div class="modal_img"><img src="/Recursos/h.png" alt="hombre"></div>
+                        <div class="modal_img"><img src="../Recursos/h.png" alt="hombre"></div>
                         <div class="modal_texts">
                             <p>Luis Miguel</p>
                             <span>Platino</span>
@@ -51,7 +51,7 @@
             <span class="text2">the glory</span>
             <a class="boton" href="#modal-registro-iniciar">Login</a>
         </div>
-        <video class="fondo" src="../Recursos/bg.mp4" loop autoplay muted></video>
+        <video loading='lazy' class="fondo" src="../Recursos/bg.mp4" loop autoplay muted></video>
         <div class="overlay"></div>
     </header>
 
@@ -86,7 +86,8 @@
                 <br><br>
                 <label class="style-label-iniciar">Número de indentificación</label>
                 <br>
-                <input  onkeypress="return soloNumeros(event)"  type="number" id="cc" name="cc" class="style-input-iniciar" required>
+                <input onkeypress="return soloNumeros(event)" type="number" id="cc" name="cc"
+                    class="style-input-iniciar" required>
                 <br><br>
                 <label class="style-label-iniciar">Contraseña</label>
                 <br>
@@ -109,7 +110,7 @@
                 <h2 id="style-registro-h2">Registro</h2>
                 <br>
                 <label class="style-registro-numid">Número de indentificación</label>
-                <input  onkeypress="return soloNumeros(event)"  type="number" id="cc" name="cc" class="c">
+                <input onkeypress="return soloNumeros(event)" type="number" id="cc" name="cc" class="c">
                 <br><br>
                 <label class="style-registro-numid">Nombre</label>
                 <input type="text" id="nombre" name="nombre">
@@ -128,7 +129,7 @@
                 <input type="number" id="peso" name="peso">
                 <br><br>
                 <label id="style-estatura-registro">Estatura (Cm)</label>
-                <input  onkeypress="return soloNumeros(event)" type="number" id="estatura" name="estatura">
+                <input onkeypress="return soloNumeros(event)" type="number" id="estatura" name="estatura">
                 <br> <br>
                 <label id="style-contra-registro">Contraseña</label>
                 <input type="password" id="contraseña" name="contraseña" class="style-contra-regis">
@@ -148,7 +149,7 @@
             <article> <br>
                 <h2 id="style-olvido-h2">Restablecer contraseña</h2>
                 <br><label id="style-olvido-cc">Número de identificación</label>
-                <input  onkeypress="return soloNumeros(event)" id="cc" name="cc" class="style-olvido-cc-in">
+                <input onkeypress="return soloNumeros(event)" id="cc" name="cc" class="style-olvido-cc-in">
                 <label id="style-olvio-contra">Nueva contraseña</label>
                 <input id="contraseña" name="contraseña" class="style-olvido-contra-in">
                 <label id="style-olvio-contra-confir">Confirmar contraseña nueva</label>
@@ -164,8 +165,8 @@
             <label>Peso (Kg)</label>
             <input type="number" id="pesoo">
             <label id="style-label-cal-esta">Estatura (Mt)</label>
-            <input type="number" id="estaturaa">
-            <textarea id="res"></textarea>
+            <input type="number" id="estaturaa" >
+            <textarea id="res" disabled></textarea>
             <br>
             <button type="button" onclick="imc()" class="but" id="but">Calcular</button>
         </article>
@@ -173,20 +174,59 @@
             <h1>Metabolismo basal</h1>
             <h3>Calcula tu metabolismo basal</h3>
             <div>
-                <label>Sexo</label>
-                <input id="sex" required>
-                <label>Peso (Kg)</label>
+                <label id="style-metabo-sex">Sexo</label>
+                <input id="sex" style="text-transform:lowercase;">
+                <label id="style-metabo-peso">Peso (Kg)</label>
                 <input type="number" id="pes" required>
-                <label>Estatura (Cm)</label>
-                <input onkeypress="return soloNumeros(event)"  type="number" id="esta" required>
-                <label>Edad</label>
-                <input onkeypress="return soloNumeros(event)" type="number" id="ed" required>
-                <textarea id="resmeta"></textarea>
+                <br>
+                <label id="style-metabo-esta">Estatura (Cm)</label>
+                <input onkeypress="return soloNumeros(event)" type="number" id="esta" >
+                <br>
+                <label id="style-metabo-edad">Edad</label><br>
+                <input onkeypress="return soloNumeros(event)" type="number" id="ed" >
+                <br><textarea id="resmeta" disabled></textarea><br><br>
                 <button type="button" onclick="meta()" id="metaBasal">Calcular</button>
             </div>
         </article>
     </section>
+<<<<<<< HEAD
+<<<<<<< HEAD
 
+    <!-- Planes -->
+    <section id="plans" class="Planes_container">
+        <div class="cards">
+            <a class="card" href="">
+                <img src="../Recursos/1.jpg" class="background_card" alt="gym">
+                <div class="card_content">
+                    <p class="category">Platino</p>
+                    <h3 class="card_heading">Example Card Headind</h3>
+                </div>
+            </a>
+            <a class="card" href="">
+                <img src="../Recursos/2.jpg" class="background_card" alt="gym">
+                <div class="card_content">
+                    <p class="category">Platino</p>
+                    <h3 class="card_heading">Example Card Headind</h3>
+                </div>
+            </a>
+            <a class="card" href="">
+                <img src="../Recursos/3.jpg" class="background_card" alt="gym">
+                <div class="card_content">
+                    <p class="category">Platino</p>
+                    <h3 class="card_heading">Example Card Headind</h3>
+                </div>
+            </a>
+            <a class="card" href="">
+                <img src="../Recursos/4.jpg" class="background_card" alt="gym">
+                <div class="card_content">
+                    <p class="category">Platino</p>
+                    <h3 class="card_heading">Example Card Headind</h3>
+                </div>
+            </a>
+        </div>
+=======
+=======
+>>>>>>> 94c5544746b68c818846f5c25e2bd7df450cb3e0
     <!-- Instructores -->
     <section class="instructor_container" id="instructores">
         <h2>Nuestros instructores</h2>
@@ -195,6 +235,7 @@
             <div class="instructores instructor2"></div>
             <div class="instructores instructor3"></div>
         </article>
+>>>>>>> 94c5544746b68c818846f5c25e2bd7df450cb3e0
     </section>
     <script src="../JS/funcionamiento.js"></script>
     <script src="../JS/jquery-3.6.0.min.js"></script>
