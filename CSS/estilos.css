@@ -1114,3 +1114,60 @@ background: #B4B3B3; /* fallback for old browsers */
     filter: brightness(0.5) saturate(0) contrast(1.2) blur(5px);
 }
 /* Modal Planes */
+.planes_modal{
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.planes_modal_content{
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    margin: 1.5rem;
+    overflow: hidden;
+    width: 30rem;
+    height: 20rem;
+}
+.planes_modal_content h6{
+    opacity: 0.6;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+.planes_modal_content h2{
+    letter-spacing: .1rem;
+    margin: 1rem 0;  
+}
+.left_column{
+    padding: 2rem;
+    max-width: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.left_column i{
+    font-size: 3rem;
+    color: white;
+}
+.right_columm{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.right_columm p{
+    font-size: .9rem;
+}
+.button_modal_planes{
+    border-radius: 3rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+    padding: .6rem .9rem;
+    letter-spacing: .1rem;
+    align-self: flex-end;
+    border:none;
+}
