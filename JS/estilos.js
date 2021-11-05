@@ -27,10 +27,10 @@ $(document).ready(function(){
   });
 
 //MODAL USERS
-let cerrar=document.querySelector(".close");
-let abrir=document.querySelector(".modal_users");
-let modal=document.querySelector(".modal_content");
-let modalC=document.querySelector(".modal_container");
+const cerrar=document.querySelector(".close");
+const abrir=document.querySelector(".modal_users");
+const modal=document.querySelector(".modal_content");
+const modalC=document.querySelector(".modal_container");
 
 abrir.addEventListener('click',(e)=>{
     e.preventDefault();
@@ -39,8 +39,10 @@ abrir.addEventListener('click',(e)=>{
 });
 function close(){
     modal.classList.add('modal_close');
+    modalP.classList.add('close_modal_planes');
     setTimeout(function(){
         modalC.style.visibility='hidden';
+        modalCP.style.visibility='hidden';
     },350);
 }
 cerrar.addEventListener('click',(e)=>{
@@ -54,5 +56,41 @@ window.addEventListener('click',(e)=>{
     }
 });
 
+//MODAL PLANES
+const modalP=document.querySelector(".planes_modal_content");
+const modalCP=document.querySelector(".planes_modal");
+const fondoModalP=document.querySelector(".left_column");
+const duracionPlan=document.querySelector("#duracion");
+const descripcionPlan=document.querySelector("#descripcion_plan");
 
-
+document.querySelectorAll('.abrir_modal').forEach((item,index)=> {
+  item.addEventListener('click', e => {
+    e.preventDefault();
+    fondoModalP.style.backgroundImage=`url('../Recursos/card${index}.jpg')`;
+    switch (index) {
+      case 0:
+        duracionPlan.innerText='1 mes';
+        descripcionPlan.innerText='Plan de entrenamiento intenso e instructor personalizado durante un mes.';
+        break;
+      case 1:
+        duracionPlan.innerText='3 meses';
+        descripcionPlan.innerText='Plan de entrenamiento intenso e instructor personalizado durante tres mes.';
+        break;
+      case 2:
+        duracionPlan.innerText='6 meses';
+        descripcionPlan.innerText='Plan de entrenamiento, instructor personalizado, dieta estructurada durante seis meses.';
+        break;
+      case 3:
+        duracionPlan.innerText='12 meses';
+        descripcionPlan.innerText='Un año de rutinas variables, dieta flexible, instructor personalizado y material audiovisual de ejercicios.';
+        break;
+    }
+    modalCP.style.visibility='visible';
+    modalP.classList.remove('close_modal_planes');
+  })
+});
+window.addEventListener('click',(e)=>{
+  if(e.target==modalCP){
+      close();
+  }
+});
