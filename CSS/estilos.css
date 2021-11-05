@@ -1131,15 +1131,6 @@ background: #B4B3B3; /* fallback for old browsers */
     width: 30rem;
     height: 20rem;
 }
-.planes_modal_content h6{
-    opacity: 0.6;
-    letter-spacing: .1rem;
-    text-transform: uppercase;
-}
-.planes_modal_content h2{
-    letter-spacing: .1rem;
-    margin: 1rem 0;  
-}
 .left_column{
     padding: 2rem;
     max-width: 10rem;
@@ -1147,6 +1138,21 @@ background: #B4B3B3; /* fallback for old browsers */
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    background: url(../Recursos/4.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: saturate(1.2) contrast(0.85);  
+}
+.planes_modal_content h6{
+    opacity: 0.7;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: #E2E2E2;
+}
+.planes_modal_content h2{
+    letter-spacing: .1rem;
+    margin: 1rem 0;  
 }
 .left_column i{
     font-size: 3rem;
@@ -1158,9 +1164,11 @@ background: #B4B3B3; /* fallback for old browsers */
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+    background:#999797;
 }
 .right_columm p{
     font-size: .9rem;
+    color: #171819;
 }
 .button_modal_planes{
     border-radius: 3rem;
@@ -1170,4 +1178,13 @@ background: #B4B3B3; /* fallback for old browsers */
     letter-spacing: .1rem;
     align-self: flex-end;
     border:none;
+    background: #6ab04c;
+    cursor: pointer;
+    
+}   
+.button_modal_planes:hover{
+    transform: scale(1.05);
+    background: #20B4E0;
+    
+    transition: transform 0.5s, backgroud 0.5s;
 }
