@@ -6,13 +6,28 @@ function imc() {
     if (al > 2 || al < 0) {
         document.getElementById('res').value = `La altura ingresada no es válida`;
     } else if (pes == '' || al == '') {
-        document.getElementById('res').value = `Datos inválidos`;
+        document.getElementById('res').value = `Campos vacíos`;
     } else {
         document.getElementById('res').value = `Tu índice de masa corporal es ${resultado} `;
     }
-
-
 }
+function validarNeg(e){
+    key = e.keycode || e.which;
+    teclado = String.fromCharCode(key);
+    numeros = "0123456789";
+    especiales = [8, 37, 38, 46];
+    tecladoEspecial = false;
+    for (item of especiales) {
+        if (key == item) {           
+                tecladoEspecial = true;            
+        }
+    }
+    if (numeros.indexOf(teclado) == -1 && !tecladoEspecial) {
+        return false;
+    }
+}
+
+
 function meta() {
     var sex = document.getElementById("sex").value;
     var pes = document.getElementById("pes").value;
@@ -21,7 +36,7 @@ function meta() {
     var r = (10 * pes) + (6.25 * esta) - (5 * ed);
 
     if (sex == '' || pes == '' || esta == '' || ed == '' ) {
-        document.getElementById('resmeta').value = `Datos inválidos`;
+        document.getElementById('resmeta').value = `Campos vacíos`;
     }else if(esta>210){
         document.getElementById('resmeta').value = `Estatura inválida`;                
     }else if (sex === "mujer") {
@@ -43,7 +58,7 @@ function soloNumeros(e) {
     tecladoEspecial = false;
     for (item of especiales) {
         if (key == item) {
-            if (teclado != '%' && teclado != '&' && teclado != '.') {
+            if (teclado != '%' && teclado != '&' && teclado != '.' ) {
                 tecladoEspecial = true;
             }
         }

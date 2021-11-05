@@ -164,7 +164,7 @@
             <h1 id="in">IMC</h1>
             <h3 id="calcul">Calcula tu índice de masa corporal</h3>
             <label>Peso (Kg)</label>
-            <input type="number" id="pesoo">
+            <input type="number" id="pesoo" onkeypress="return validarNeg(event)">
             <label id="style-label-cal-esta">Estatura (Mt)</label>
             <input type="number" id="estaturaa" >
             <textarea id="res" disabled></textarea>
@@ -178,7 +178,7 @@
                 <label id="style-metabo-sex">Sexo</label>
                 <input id="sex" style="text-transform:lowercase;">
                 <label id="style-metabo-peso">Peso (Kg)</label>
-                <input type="number" id="pes" required>
+                <input type="number" id="pes" required onkeypress="return validarNeg(event)" >
                 <br>
                 <label id="style-metabo-esta">Estatura (Cm)</label>
                 <input onkeypress="return soloNumeros(event)" type="number" id="esta" >
