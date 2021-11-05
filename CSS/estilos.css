@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:ital,wght@0,200;0,300;0,500;0,600;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -7,11 +7,8 @@
     color: #fff;
     font-weight: 600;
     text-decoration: none;
-    
 }
 /* quitar autoincrementar en inputs tipo number */
-
-
 
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
@@ -791,16 +788,16 @@ body, #modal-registro, #modal-registro-iniciar, #modal-olvido{
 .cal #in{
     font-size: 3.5rem;
     margin-bottom: 1.1rem;
-    color: black;
+    color: #171819;
 }
 .cal #calcul{
     font-size: 1.3rem;
     font-weight: 300;
     margin-bottom: 1.1rem;
-    color: black;
+    color: #171819;
 }
 .calculos .cal label{
-    color: black;
+    color: #171819;
 }
 #pesoo{
     position: absolute;
@@ -833,7 +830,7 @@ background: #B4B3B3; /* fallback for old browsers */
     border: none;  
     height: 30px;
     resize: none;
-    color: black;
+    color: #171819;
 }
 
 .but{
@@ -857,18 +854,18 @@ background: #B4B3B3; /* fallback for old browsers */
     padding:1rem 0 1rem 4rem;
 }
 .metabo label, input, textarea{
-    color: black;
+    color: #171819;
 }
 .metabo h1{
     font-size: 2.3rem;
     margin-bottom: 1.1rem;
-    color: black;
+    color: #171819;
 }
 .metabo h3{
      font-size: 1.2rem;
     font-weight: 300;
     margin-bottom: 1.1rem;
-    color: black;
+    color: #171819;
 }
 #sex{
     position: absolute;
@@ -975,7 +972,7 @@ background: #B4B3B3; /* fallback for old browsers */
     border: none;  
     height: 30px;
     resize: none;
-    color: black;  
+    color: #171819;  
     top: 266%;
     background: #B4B3B3; /* fallback for old browsers */
     border-bottom:1px solid rgb(0, 0, 0);
@@ -1042,23 +1039,27 @@ background: #B4B3B3; /* fallback for old browsers */
 } 
 
 /* Planes section */
-.Planes_container{
-    /* border-top: 10px solid #171819; */
-    position: relative;
+
+.Planes_section{
     height: 100vh;
     width: 100%;
+    background: #B4B3B3;
+    display: flex;
+    flex-direction: column;
+    padding-top: 90px;
+    border-top: 20px solid #171819;
+}
+.Planes_title{
+    color: #171819;
+    align-self: center;
+    font-size: 34px;
+    margin-bottom: 35px;
+    font-weight: 700;
+}
+.Planes_container{
     display: flex;
     justify-content: center;
-    align-items: center;
-    background: #B4B3B3;
-    padding-top: 80px;
-}
-.wave{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    fill: #171819;
+    align-items: center;  
 }
 .cards{
     display: grid;
@@ -1070,8 +1071,7 @@ background: #B4B3B3; /* fallback for old browsers */
 .card{
     position: relative;
     list-style: none;
-    height: 450px;
-    border-radius: 20px;
+    height: 400px;
 }
 
 .background_card{
@@ -1106,7 +1106,7 @@ background: #B4B3B3; /* fallback for old browsers */
 }
 .card_heading{
     color: rgba(255, 255, 255, 0.9);
-    font-size: 1.5rem;
+    font-size: 20px;
     line-height: 1.4;
     text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
 }
