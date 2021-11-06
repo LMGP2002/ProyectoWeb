@@ -673,10 +673,11 @@ background: #cfcece; /* fallback for old browsers */
     flex-direction: column;
     justify-content: center;
     background: #B4B3B3;
-    padding-top: 75px;
+    padding-top: 80px;
+    padding-bottom: 20px;
 }
 .Planes_title{
-    color: #fff;
+    color: rgba(0, 0, 0, 0.8);
     align-self: center;
     font-size: 34px;
     margin-bottom: 35px;
@@ -841,7 +842,7 @@ footer{
     margin-left: 30px;
 }
 .sec.aboutus{
-    width: 40%;
+    width:40%;
 }
 footer h2{
     position: relative;
@@ -861,6 +862,7 @@ footer h2::before{
 .sec.aboutus p{
     color: #999;
     text-align:justify;
+    margin-bottom: 40px;
 
 }
 .sci{
@@ -892,7 +894,7 @@ footer li{
 
 .quickLinks{
     position: relative;
-    width: 25%;
+    width: 20%;
 }
 .quickLinks ul li a{ 
     color: #999;
@@ -905,7 +907,7 @@ footer li{
     color:#fff;
 }
 footer .contact{
-    width: 1fr;
+    width: 20%;
     margin-right:0 !important ;
 }
 .info{
