@@ -28,6 +28,7 @@ body, input{
     right: 48%;
     transform: translateY(-50%);
     z-index: 6;
+    transition: 1.8s ease-in-out;
 }
 .forms_container{
     position: absolute;
@@ -145,7 +146,7 @@ form.signup_form{
 }
 .image{
     width: 100%;
-
+    transition: 1.1s .4s ease-in-out;
 }
 .panels_container{
   position: absolute;  
@@ -174,6 +175,7 @@ form.signup_form{
 }
 .panel .content{
     color: #fff;
+    transition: .9s .6s ease-in-out;
 }
 .panel h3{
     font-weight: 600;
@@ -197,4 +199,14 @@ form.signup_form{
 }
 .right_panel .content,.right_panel .image{
     transform: translateX(800px);
+
+}
+/* animation */
+.container.signUp_mode::before{
+    transform: translate(100%, -50%);
+    right: 52%;
+}
+.container.signUp_mode .left_panel .image,
+.container.signUp_mode .left_panel .content {
+transform: translateX(-800px);
 }
