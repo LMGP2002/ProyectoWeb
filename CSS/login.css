@@ -46,6 +46,7 @@ form{
     overflow: hidden;
     grid-column: 1/2;
     grid-row: 1/2;
+    transition: .2s .7s ease-in-out;
 }
 form.login_form{
     z-index: 2;
@@ -143,6 +144,7 @@ form.signup_form{
     display: grid;
     grid-template-columns: 1fr;
     z-index: 5;
+    transition: 1s .7s ease-in-out;
 }
 .image{
     width: 100%;
@@ -168,6 +170,7 @@ form.signup_form{
 .left_panel{
     padding: 3rem 17% 2rem 12%;
     pointer-events: all;
+    gap: 50px;
 }
 .right_panel{
     pointer-events: none;
@@ -208,6 +211,37 @@ form.signup_form{
 }
 .container.signUp_mode .left_panel .image,
 .container.signUp_mode .left_panel .content {
-transform: translateX(-800px);
+    transform: translateX(-800px);
 }
-
+.container.signUp_mode .right_panel .content
+ {
+    transform: translateX(0);
+}
+.container.signUp_mode .right_panel .image{
+    transform: translateX(60px);
+}
+.container.signUp_mode .left_panel{
+    pointer-events: none;
+}
+.container.signUp_mode .right_panel{
+    pointer-events: all;
+}
+.container.signUp_mode .login_signup{
+    left: 25%;
+}
+.container.signUp_mode form.login_form{
+    z-index: 1;
+    opacity: 0;
+}
+.container.signUp_mode form.signup_form{
+    z-index: 2;
+    opacity: 1;
+}
+.left_panel .image{
+    width: 500px;
+    height: 400px;
+}
+.right_panel .image{
+    
+    margin-left: 50px;
+}
