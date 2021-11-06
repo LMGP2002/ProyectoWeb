@@ -779,7 +779,7 @@ body, #modal-registro, #modal-registro-iniciar, #modal-olvido{
     justify-content: space-between;
     align-items: center;
     padding: 8rem 14rem;
-    background: #B4B3B3;
+    background: #cfcece;
 }
 .cal{
     width: 45%;
@@ -805,7 +805,7 @@ border: 0;
 border-bottom:1px solid rgb(0, 0, 0); 
 top: 255%; 
 left: 225px;
-background: #B4B3B3; /* fallback for old browsers */
+background: #cfcece; /* fallback for old browsers */
   }
 #pesoo,#estaturaa,#res:focus{
     outline:none;
@@ -820,12 +820,12 @@ background: #B4B3B3; /* fallback for old browsers */
     border-bottom:1px solid rgb(0, 0, 0); 
     top: 255%; 
     left: 430px;
-    background: #B4B3B3; /* fallback for old browsers */
+    background: #cfcece; /* fallback for old browsers */
            
 }
 #res{
     margin-top: 30px;
-    background: #B4B3B3; /* fallback for old browsers */
+    background: #cfcece; /* fallback for old browsers */
     width: 353px;     
     border: none;  
     height: 30px;
@@ -873,7 +873,7 @@ background: #B4B3B3; /* fallback for old browsers */
     left: 58%;
     border: 0;
     border-bottom:1px solid rgb(0, 0, 0); 
-    background: #B4B3B3; /* fallback for old browsers */
+    background: #cfcece; /* fallback for old browsers */
    
 }
 #style-metabo-peso{
@@ -891,7 +891,7 @@ background: #B4B3B3; /* fallback for old browsers */
     border-bottom:1px solid rgb(0, 0, 0); 
     top: 253%; 
     left: 73%;
-    background: #B4B3B3; 
+    background: #cfcece; 
 }
 
   
@@ -906,7 +906,7 @@ background: #B4B3B3; /* fallback for old browsers */
     left: 58%;      
     border: 0;
     border-bottom:1px solid rgb(0, 0, 0); 
-    background: #B4B3B3; /* fallback for old browsers */
+    background: #cfcece; /* fallback for old browsers */
       
 }
 #style-metabo-edad{
@@ -920,7 +920,7 @@ background: #B4B3B3; /* fallback for old browsers */
     left: 73%;   
     border: 0;
     border-bottom:1px solid rgb(0, 0, 0); 
-    background: #B4B3B3; /* fallback for old browsers */
+    background: #cfcece; /* fallback for old browsers */
    
 }
 #resmeta{    
@@ -932,7 +932,7 @@ background: #B4B3B3; /* fallback for old browsers */
     resize: none;
     color: black;  
     top: 266%;
-    background: #B4B3B3; /* fallback for old browsers */
+    background: #cfcece; /* fallback for old browsers */
     border-bottom:1px solid rgb(0, 0, 0);
     border: 0;   
 }
@@ -948,7 +948,7 @@ background: #B4B3B3; /* fallback for old browsers */
     left: 58%;      
     border: 0;
     border-bottom:1px solid rgb(0, 0, 0); 
-    background: #B4B3B3; /* fallback for old browsers */
+    background: #cfcece; /* fallback for old browsers */
       
 }
 #style-metabo-edad{
@@ -962,7 +962,7 @@ background: #B4B3B3; /* fallback for old browsers */
     left: 73%;   
     border: 0;
     border-bottom:1px solid rgb(0, 0, 0); 
-    background: #B4B3B3; /* fallback for old browsers */
+    background: #cfcece; /* fallback for old browsers */
    
 }
 #resmeta{    
@@ -974,7 +974,7 @@ background: #B4B3B3; /* fallback for old browsers */
     resize: none;
     color: #171819;  
     top: 266%;
-    background: #B4B3B3; /* fallback for old browsers */
+    background: #cfcece; /* fallback for old browsers */
     border-bottom:1px solid rgb(0, 0, 0);
     border: 0;   
 }
@@ -990,7 +990,7 @@ background: #B4B3B3; /* fallback for old browsers */
     left: 58%;      
     border: 0;
     border-bottom:1px solid rgb(0, 0, 0); 
-    background: #B4B3B3; /* fallback for old browsers */
+    background: #cfcece; /* fallback for old browsers */
       
 }
 #style-metabo-edad{
@@ -1004,7 +1004,7 @@ background: #B4B3B3; /* fallback for old browsers */
     left: 73%;   
     border: 0;
     border-bottom:1px solid rgb(0, 0, 0); 
-    background: #B4B3B3; /* fallback for old browsers */
+    background: #cfcece; /* fallback for old browsers */
    
 }
 #resmeta{    
@@ -1016,7 +1016,7 @@ background: #B4B3B3; /* fallback for old browsers */
     resize: none;
     color: black;  
     top: 266%;
-    background: #B4B3B3; /* fallback for old browsers */
+    background: #cfcece; /* fallback for old browsers */
     border-bottom:1px solid rgb(0, 0, 0);
     border: 0;   
 }
@@ -1046,11 +1046,10 @@ background: #B4B3B3; /* fallback for old browsers */
     background: #B4B3B3;
     display: flex;
     flex-direction: column;
-    padding-top: 90px;
-    border-top: 20px solid #171819;
+    padding-top: 110px;
 }
 .Planes_title{
-    color: #171819;
+    color: #fff;
     align-self: center;
     font-size: 34px;
     margin-bottom: 35px;
@@ -1186,6 +1185,9 @@ background: #B4B3B3; /* fallback for old browsers */
     background: #6ab04c;
     cursor: pointer;
     transition: transform 0.5s;
+    font-weight: 400;
+    text-transform: uppercase;
+
     
 }   
 .button_modal_planes:hover{
