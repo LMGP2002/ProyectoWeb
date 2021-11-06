@@ -166,7 +166,7 @@
             <label>Peso (Kg)</label>
             <input type="number" id="pesoo" onkeypress="return validarNeg(event)">
             <label id="style-label-cal-esta">Estatura (Mt)</label>
-            <input type="number" id="estaturaa" >
+            <input type="number" id="estaturaa">
             <textarea id="res" disabled></textarea>
             <br>
             <button type="button" onclick="imc()" class="but" id="but">Calcular</button>
@@ -178,21 +178,20 @@
                 <label id="style-metabo-sex">Sexo</label>
                 <input id="sex" style="text-transform:lowercase;">
                 <label id="style-metabo-peso">Peso (Kg)</label>
-                <input type="number" id="pes" required onkeypress="return validarNeg(event)" >
+                <input type="number" id="pes" required onkeypress="return validarNeg(event)">
                 <br>
                 <label id="style-metabo-esta">Estatura (Cm)</label>
-                <input onkeypress="return soloNumeros(event)" type="number" id="esta" >
+                <input onkeypress="return soloNumeros(event)" type="number" id="esta">
                 <br>
                 <label id="style-metabo-edad">Edad</label><br>
-                <input onkeypress="return soloNumeros(event)" type="number" id="ed" >
+                <input onkeypress="return soloNumeros(event)" type="number" id="ed">
                 <br><textarea id="resmeta" disabled></textarea><br><br>
                 <button type="button" onclick="meta()" id="metaBasal">Calcular</button>
             </div>
         </article>
     </section>
-
-     <!-- Modal Planes -->
-     <div class="planes_modal">
+    <!-- Modal Planes -->
+    <div class="planes_modal">
         <div class="planes_modal_content close_modal_planes disable-select">
             <div class="left_column"></div>
             <div class="right_columm">
@@ -219,7 +218,7 @@
                     <div class="card_content">
                         <p class="category">Bronce</p>
                         <p class="card_heading">HardWork Regular Plan</p>
-                        <p class="category">30.000 COP</p>        
+                        <p class="category">30.000 COP</p>
                     </div>
                 </a>
                 <a class="card abrir_modal" href="">
@@ -227,7 +226,7 @@
                     <div class="card_content">
                         <p class="category">Plata</p>
                         <p class="card_heading">HardWork Normal Plan</p>
-                        <p class="category">90.000 COP</p>        
+                        <p class="category">90.000 COP</p>
                     </div>
                 </a>
                 <a class="card abrir_modal" href="">
@@ -235,7 +234,7 @@
                     <div class="card_content">
                         <p class="category">Platino</p>
                         <p class="card_heading">HardWork Special Plan</p>
-                        <p class="category">180.000 COP</p>        
+                        <p class="category">180.000 COP</p>
                     </div>
                 </a>
                 <a class="card abrir_modal" href="">
@@ -243,17 +242,17 @@
                     <div class="card_content">
                         <p class="category">Oro</p>
                         <p class="card_heading">HardWork Exclusive Plan</p>
-                        <p class="category">360.000 COP</p>        
+                        <p class="category">360.000 COP</p>
                     </div>
                 </a>
             </div>
         </div>
 
-       
-        
-    <script src="../JS/funcionamiento.js"></script>
-    <script src="../JS/jquery-3.6.0.min.js"></script>
-    <script src="../JS/estilos.js"></script>
+
+
+        <script src="../JS/funcionamiento.js"></script>
+        <script src="../JS/jquery-3.6.0.min.js"></script>
+        <script src="../JS/estilos.js"></script>
 </body>
 
 </html>
