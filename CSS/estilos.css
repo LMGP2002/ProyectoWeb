@@ -814,7 +814,6 @@ background: #cfcece; /* fallback for old browsers */
     font-weight: 400;
     text-transform: uppercase;
 
-    
 }   
 .button_modal_planes:hover{
     transform: scale(1.04);
