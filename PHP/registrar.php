@@ -13,15 +13,18 @@ $resultado= $sentencia->fetchAll();
 
 
 if($resultado){
-echo"<script>alert('El usuario ya se encuentra registrado.');</script>";
-header('Location: ../HTML/login.html');
+echo"<script>alert('El usuario ya se encuentra registrado.');
+window.location='../HTML/login.html'; </script>";
+
    
 }else{
     if($_POST){
  $agregar = 'INSERT into usuario (nombre_usuario, contrasena, email) values (?,?,?)'  ;
  $sql_agregar = $pdo->prepare($agregar);
  $sql_agregar->execute(array($usuario_nom,$contra,$email));
- echo"<script>alert('Registro exitoso.');</script>";
- header('Location: ../HTML/login.html');
+ 
+ echo"<script>alert('Registro exitoso.');
+window.location='../HTML/login.html'; </script>";
+ 
 }
 }
