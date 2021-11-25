@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -36,7 +39,10 @@
                         <h2 class="modal_title">Your user</h2>
                         <div class="modal_img"><img src="../Recursos/h.png" alt="hombre"></div>
                         <div class="modal_texts">
-                            <p>Luis Miguel</p>
+                            <p> <?php
+                                echo $_SESSION['admin'];
+                                ?>
+                            </p>
                             <span>Platino</span>
                         </div>
                     </div>
@@ -75,8 +81,7 @@
         </article>
     </section>
 
-    <!-- Cálculos -->
-    
+    <!-- Cálculos -->    
     <section class="calculos" id="health">
         <article class="cal">
             <h1 id="in">IMC</h1>
