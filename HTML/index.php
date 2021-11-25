@@ -27,7 +27,7 @@ session_start();
                 <a class="modal_users" href="#"><i class="fas fa-user icon"></i></a>
                 <a href="https://www.facebook.com/profile.php?id=100074361196775" target="_blank" ><i class="fab fa-facebook-f icon"></i></a>
                 <a href="https://www.youtube.com/channel/UCiyLs3C67dYlHt86otVEwJw" target="_blank"><i class="fab fa-youtube icon"></i></a>
-                <a href="#"><i class="fas fa-shopping-cart icon"></i></a>
+                <a href="../PHP/cerrar_sesion.php"><i class="fas fa-shopping-cart icon"></i></a>
             </div>
         </nav>
         <!-- Modal Users -->
