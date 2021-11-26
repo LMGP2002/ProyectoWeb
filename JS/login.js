@@ -9,5 +9,3 @@ $signUp.addEventListener('click',()=>{
 $loginBtn.addEventListener('click',()=>{
     $container.classList.remove('signUp_mode');
 });
-
-

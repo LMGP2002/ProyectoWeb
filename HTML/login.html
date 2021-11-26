@@ -8,13 +8,12 @@
     <link rel="stylesheet" href="../CSS/login.css">
     <script src="https://kit.fontawesome.com/523f0710e5.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-     
+         
 </head>
 <body>
     <header class="container">
         <div class="forms_container">
             <div class="login_signup">
-                 <!-- action="../HTML/index.html"  -->
                  <form  action="../PHP/iniciar_sesion.php" method="POST"  class="login_form">
                     <h2 class="title">Log In</h2>
                     <div class="input_field">
@@ -25,8 +24,7 @@
                         <i class="fas fa-lock"></i>
                         <input id="contraseñaa" name="contraseñaa" type="password" placeholder="Password">
                     </div>
-                    <!-- <input type="submit" value="Login"   class="btn"> -->
-                    <button type="submit" value="Login" class="btn">Login</button>                    
+                    <button type="submit" id="inicioS" value="Login" class="btn">Login</button>                    
                     <p class="social_text">Revisa nuestras redes sociales</p>
                     <div class="social_media">
                         <a href="https://www.facebook.com/profile.php?id=100074361196775" target="_blank" class="social_icon">
@@ -96,7 +94,6 @@
             </div>
         </div>
     </header>
-
-    <script src="../JS/login.js"></script>
+       <script src="../JS/login.js"></script>
 </body>
 </html>

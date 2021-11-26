@@ -14,7 +14,6 @@ if(!$resultado){
     window.location='../HTML/login.html';</script>";
     die();
 }
-
 if(password_verify($contra, $resultado['contrasena'])){
 $_SESSION['admin']=$usuario_nom;
 header('Location: ../PHP/verificar.php');

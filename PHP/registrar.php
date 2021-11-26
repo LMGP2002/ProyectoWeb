@@ -1,4 +1,5 @@
-<?php
+
+<?php 
 include_once 'conexion.php';
 $usuario_nom = $_POST['nombre_usuario'];
 $contra = $_POST['contraseña'];
@@ -16,9 +17,9 @@ $sentenciaem = $pdo->prepare($sqlem);
 $sentenciaem->execute(array($email));
 $resultadoem= $sentenciaem->fetchAll();
 
-if($resultado){
-echo"<script>alert('El usuario ya se encuentra registrado.');
-window.location='../HTML/login.html'; </script>";
+if($resultado){ 
+echo "<script> alert('El usuario ya se encuentra registrado.');
+          window.location= '../HTML/login.html'; </script>"; 
    
 }else if($resultadoem){
     echo"<script>alert('El email ya se encuentra registrado.');
