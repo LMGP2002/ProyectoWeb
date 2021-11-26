@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all ease-in-out 0.5s;
   z-index: 9997;
   transition: all 0.5s;
-  padding: 50px 15px;
+  padding: 70px 15px;
   background: #040b14;
   overflow-y: auto;
 }
@@ -275,8 +275,10 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 50px;
+  padding: 100px 70px;
   overflow: hidden;
+  width: 100%;
+  height: 100vh;
 }
 
 .section-bg {
@@ -340,6 +342,7 @@ section {
 }
 .datos_container{
   margin-top: 5px;
+  margin-bottom: 50px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2,1fr);
@@ -390,7 +393,7 @@ input[type="radio"]{
   margin-top: 20px;
   width: 150px;
   display: flex;
-  gap: 50px;
+  gap: 50%;
 }
 .label::before{
   content: "";
@@ -411,7 +414,23 @@ input[type='radio']:checked + .label::before{
   width: 16px;
   border: 10px solid white;
 }
+.btn_datos{
+  text-transform: uppercase;
+  font-size: 15px;
+  border: 0;
+  color: #fff;
+  background: #7ed386;
+  font-weight: 600;
+  padding: 7px 15px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+  cursor: pointer;
+  transition: background .7s, transform .7s ;
+}
 
+.btn_datos:hover{
+  background: #55ac5e;
+  transform: scale(1.05);
+}
 
 /*--------------------------------------------------------------
 # Footer
