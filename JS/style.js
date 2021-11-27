@@ -26,37 +26,7 @@ $(document).ready(function(){
     });
   });
 
-//MODAL USERS
-const cerrar=document.querySelector(".close");
-const abrir=document.querySelector(".modal_users");
-const modal=document.querySelector(".modal_content");
-const modalC=document.querySelector(".modal_container");
-
-abrir.addEventListener('click',(e)=>{
-    e.preventDefault();
-    modalC.style.visibility='visible';
-    modal.classList.remove('modal_close');
-});
-function close(){
-    modal.classList.add('modal_close');
-    modalP.classList.add('close_modal_planes');
-    setTimeout(function(){
-        modalC.style.visibility='hidden';
-        modalCP.style.visibility='hidden';
-    },350);
-}
-cerrar.addEventListener('click',(e)=>{
-    e.preventDefault();
-    close();
-});
-
-window.addEventListener('click',(e)=>{
-    if(e.target==modalC){
-        close();
-    }
-});
-
-//MODAL PLANES
+  //MODAL PLANES
 const modalP=document.querySelector(".planes_modal_content");
 const modalCP=document.querySelector(".planes_modal");
 const fondoModalP=document.querySelector(".left_column");

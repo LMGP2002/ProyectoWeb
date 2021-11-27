@@ -1,3 +1,15 @@
+<?php
+session_start();
+include_once '../PHP/conexion.php'; 
+if($_GET){
+$id = $_GET['id'];
+$sql = 'SELECT * FROM usuario where id=?';
+$sentencia = $pdo->prepare($sql);
+$sentencia->execute(array($id));
+$resultado= $sentencia->fetch();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -60,37 +72,35 @@
     </div>
   </section>
 
-  <main id="main">
-
+<main id="main">
+  <?php if($_GET):?>
+    <form method="GET" action="../PHP/actualizar.php">
     <!--About Section>-->
-    <section id="about" class="about">
-      <div class="container">
-        <div class="section-title">
-          <h2>Tus datos</h2>
-        </div>
-        <div class="datos_container">
+       <section id="about" class="about">
+       <div class="datos_container">
           <div class="datos_column left_datos">
+          <input  type="hidden" name="id"  value="<?php echo $resultado['id'] ?>">
             <div>
               <h3>Nombre</h3>
-              <input class="input" type="text">
+              <input class="input" type="text"  id="nombre" name="nombre"  value="<?php echo $resultado['nombre'] ?>">
             </div>
             <div>
               <h3>Apellido</h3>
-              <input class="input" type="text">
+              <input class="input" type="text" id="apellido" name="apellido"  value="<?php echo $resultado['apellido'] ?>">
             </div>
             <div>
               <h3>Edad</h3>
-              <input class="input" type="text">
+              <input class="input" type="text" id="edad" name="edad"  value="<?php echo $resultado['edad'] ?>">
             </div>
           </div>
           <div class="datos_column right_datos">
             <div>
               <h3>Peso</h3>
-              <input class="input" type="text">
+              <input class="input" type="text" id="peso" name="peso"  value="<?php echo $resultado['peso'] ?>">
             </div>
             <div>
               <h3>Estatura</h3>
-              <input class="input" type="text">
+              <input class="input" type="text" id="estatura" name="estatura"  value="<?php echo $resultado['estatura'] ?>">
             </div>
             <div class="radio_container">
               <div>
@@ -104,10 +114,12 @@
             </div>
           </div>
       </div>
-      <button type="button" class="btn_datos">Actualizar</button>
-      </div>
-    </section>
-  </main>
+
+      <button type="submit" class="btn_datos">Actualizar</button>
+        </section>
+    </form>
+  <?php endif?>
+</main>
 
   <!--Footer-->
   <footer id="footer">

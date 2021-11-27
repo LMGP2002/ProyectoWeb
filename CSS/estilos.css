@@ -474,10 +474,18 @@ background: #cfcece; /* fallback for old browsers */
     cursor: pointer;
 }
 /* metabolismo basal */
+.input_container{
+display: flex;
+margin: 20px;
+}
+
 .metabo{
     border-left: 1px solid #666262;
     width: 45%;
     padding:1rem 0 1rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 .metabo label, input, textarea{
     color: #171819;

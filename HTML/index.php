@@ -24,7 +24,7 @@ session_start();
                 <li><a href="#plans">Plans</a></li>
             </ul>
             <div class="container-icons">
-                <a class="modal_users" href="#"><i class="fas fa-user icon"></i></a>
+                <a class="modal_users" id="modalUser" href="#"><i class="fas fa-user icon"></i></a>
                 <a href="https://www.facebook.com/profile.php?id=100074361196775" target="_blank" ><i class="fab fa-facebook-f icon"></i></a>
                 <a href="https://www.youtube.com/channel/UCiyLs3C67dYlHt86otVEwJw" target="_blank"><i class="fab fa-youtube icon"></i></a>
                 <a href="../PHP/cerrar_sesion.php"><i class="fas fa-shopping-cart icon"></i></a>
@@ -39,15 +39,27 @@ session_start();
                         <h2 class="modal_title">Your user</h2>
                         <div class="modal_img"><img src="../Recursos/h.png" alt="hombre"></div>
                         <div class="modal_texts">
-                            <p> <?php
+                            <p id="bandera" data-description="<?php if(isset($_SESSION['admin']) ){
                                 echo $_SESSION['admin'];
+                            }else {
+                                echo ('Vacío');
+                            }?>"> <?php
+                            if(isset($_SESSION['admin']) ){
+                                echo $_SESSION['admin'];
+                            }else {
+                                echo ('Vacío');
+                            }
                                 ?>
-                            </p>
-                            <span>Platino</span>
+                            </p>                            
+                            <span id="tittle"><?php echo ($_SESSION['planes']);?></span>                                                       
                         </div>
                     </div>
                     <div class="button_container_modal">
-                        <button onclick="location.href='profile.html'" class="modal_button">Ver perfil</button>
+                        <?php if(isset($_SESSION['admin'])):  ?>
+                            <a href="profile.php?id=<?php echo $_SESSION['id']?>"><button onclick="location.href='profile.html'" class="modal_button">Ver perfil</button></a> 
+                       <?php else:?>
+                        <button class="modal_button">Ver perfil</button>
+                        <?php endif?>                  
                     </div>
                 </div>
             </div>
@@ -55,7 +67,7 @@ session_start();
         <div class="container-text">
             <span class="text1">welcome to</span>
             <span class="text2">the glory</span>
-            <a class="boton" href="../HTML/login.html">Login</a>
+            <a class="boton" id="ocultarBtn" href="../HTML/login.html">Login</a>
         </div>
         <video loading='lazy' class="fondo" src="../Recursos/bg.mp4" loop autoplay muted></video>
         <div class="overlay"></div>
@@ -67,7 +79,7 @@ session_start();
             <h3>¿Quieres empezar a forjar la disciplina en tu vida?</h3>
             <p>Contamos con el equipamento más moderno, planes alimenticios, rutinas de ejercicios y los mejores
                 instructores para que puedas conseguir tu mejor versión. <br><span>¡No esperes más!</span></p>
-            <a class="boton" href="../HTML/login.html">Únete</a>
+            <a class="boton" id="modificarBtn" href="../HTML/login.html">Únete</a>
         </article>
         <article class="dos">
             <h3>Horarios de atención</h3>
@@ -95,22 +107,31 @@ session_start();
             <button type="button" onclick="imc()" class="but" id="but">Calcular</button>
         </article>
         <article class="metabo">
-            <h1>Metabolismo basal</h1>
-            <h3>Calcula tu metabolismo basal</h3>
             <div>
-                <label id="style-metabo-sex">Sexo</label>
-                <input id="sex" style="text-transform:lowercase;">
-                <label id="style-metabo-peso">Peso (Kg)</label>
-                <input type="number" id="pes" required onkeypress="return validarNeg(event)">
-                <br>
-                <label id="style-metabo-esta">Estatura (Cm)</label>
-                <input onkeypress="return soloNumeros(event)" type="number" id="esta">
-                <br>
-                <label id="style-metabo-edad">Edad</label><br>
-                <input onkeypress="return soloNumeros(event)" type="number" id="ed">
-                <br><textarea id="resmeta" disabled></textarea><br><br>
-                <button type="button" onclick="meta()" id="metaBasal">Calcular</button>
+                 <h1>Metabolismo basal</h1>
+                 <h3>Calcula tu metabolismo basal</h3>
             </div>
+            <div class="input_container">
+                <div>
+                    <label >Sexo</label>
+                    <input id="sex" style="text-transform:lowercase;">
+
+                    <label >Estatura (Cm)</label>
+                    <input onkeypress="return soloNumeros(event)" type="number" id="esta">
+                </div>
+                <div>
+                    <label >Peso (Kg)</label>
+                    <input type="number" id="pes" required onkeypress="return validarNeg(event)">
+               
+                    <label >Edad</label><br>
+                    <input onkeypress="return soloNumeros(event)" type="number" id="ed">
+                </div>
+                            
+            </div> 
+            <div> 
+                    <textarea id="resmeta" disabled></textarea>
+                    <button type="button" onclick="meta()" id="metaBasal">Calcular</button>
+            </div>    
         </article>
     </section>
     <!-- Modal Planes -->
@@ -126,25 +147,24 @@ session_start();
                     <h2>Este Plan Incluye</h2>
                     <p id="descripcion_plan"></p>
                 </div>
-                <button class="button_modal_planes">Comprar</button>
+                <a id="comprarBtn" data-id="<?php echo $_SESSION['id']?>" class="button_modal_planes">Comprar</a>
             </div>
         </div>
     </div>
-
     <!-- Planes -->
     <section id="plans" class="Planes_section">
         <h2 class="Planes_title">Selecciona tu plan</h2>
             <div class="Planes_container disable-select">
                 <div class="cards">
-                    <a class="card abrir_modal" href="">
+                    <a  data-category="Bronce"  class="card abrir_modal" href="">
                         <img src="../Recursos/card0.jpg" class="background_card" alt="gym">
                         <div class="card_content">
-                            <p class="category">Bronce</p>
+                            <p class="category" >Bronce</p>
                             <p class="card_heading">HardWork Regular Plan</p>
                             <p class="category">30.000 COP</p>
                         </div>
                     </a>
-                    <a class="card abrir_modal" href="">
+                    <a  data-category="Plata" class="card abrir_modal" href="">
                         <img src="../Recursos/card1.jpg" class="background_card" alt="gym">
                         <div class="card_content">
                             <p class="category">Plata</p>
@@ -152,7 +172,7 @@ session_start();
                             <p class="category">90.000 COP</p>
                         </div>
                     </a>
-                    <a class="card abrir_modal" href="">
+                    <a data-category="Platino"  class="card abrir_modal" href="">
                         <img src="../Recursos/card2.jpg" class="background_card" alt="gym">
                         <div class="card_content">
                             <p class="category">Platino</p>
@@ -160,7 +180,7 @@ session_start();
                             <p class="category">180.000 COP</p>
                         </div>
                     </a>
-                    <a class="card abrir_modal" href="">
+                    <a  data-category="Oro"  class="card abrir_modal" href="">
                         <img src="../Recursos/card3.jpg" class="background_card" alt="gym">
                         <div class="card_content">
                             <p class="category">Oro</p>
@@ -218,7 +238,9 @@ session_start();
         </footer>
         <script src="../JS/funcionamiento.js"></script>
         <script src="../JS/jquery-3.6.0.min.js"></script>
-        <script src="../JS/estilos.js"></script>
+        <script src="../JS/style.js"></script>
+        <script src="../JS/interfaz.js"></script>
+        
 </body>
 
 </html>
