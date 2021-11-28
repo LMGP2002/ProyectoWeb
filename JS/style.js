@@ -26,7 +26,7 @@ $(document).ready(function(){
     });
   });
 
-  //MODAL PLANES
+//MODAL PLANES
 const modalP=document.querySelector(".planes_modal_content");
 const modalCP=document.querySelector(".planes_modal");
 const fondoModalP=document.querySelector(".left_column");
