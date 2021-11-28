@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 28-11-2021 a las 03:30:00
+-- Tiempo de generación: 28-11-2021 a las 05:46:22
 -- Versión del servidor: 10.4.21-MariaDB
 -- Versión de PHP: 8.0.11
 
@@ -35,10 +35,9 @@ CREATE TABLE `usuario` (
   `nombre` varchar(50) NOT NULL DEFAULT '',
   `apellido` varchar(50) NOT NULL DEFAULT '',
   `edad` int(100) NOT NULL DEFAULT 0,
-  `peso` float NOT NULL,
-  `estatura` float NOT NULL,
-  `sexo` varchar(10) NOT NULL DEFAULT '',
-  `plan` varchar(20) NOT NULL
+  `peso` float NOT NULL DEFAULT 0,
+  `estatura` float NOT NULL DEFAULT 0,
+  `plan` varchar(20) NOT NULL DEFAULT ''
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
