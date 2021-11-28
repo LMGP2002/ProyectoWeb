@@ -6,23 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesión</title>
     <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="../Recursos/Plugins/dist/sweetalert2.min.css">
     <script src="https://kit.fontawesome.com/523f0710e5.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-         
 </head>
 <body>
     <header class="container">
         <div class="forms_container">
             <div class="login_signup">
-                 <form  action="../PHP/iniciar_sesion.php" method="POST"  class="login_form">
+                 <form action="../PHP/iniciar_sesion.php" method="POST" class="login_form">
                     <h2 class="title">Log In</h2>
                     <div class="input_field">
                         <i class="fas fa-user"></i>
-                        <input id="nombre_usuarioo"  name="nombre_usuarioo" type="text" placeholder="Username">
+                        <input required id="nombre_usuarioo"  name="nombre_usuarioo" type="text" placeholder="Username">
                     </div>
                     <div class="input_field">
                         <i class="fas fa-lock"></i>
-                        <input id="contraseñaa" name="contraseñaa" type="password" placeholder="Password">
+                        <input required id="contraseñaa" name="contraseñaa" type="password" placeholder="Password">
                     </div>
                     <button type="submit" id="inicioS" value="Login" class="btn">Login</button>                    
                     <p class="social_text">Revisa nuestras redes sociales</p>
@@ -94,6 +94,6 @@
         </div>
     </header>
        <script src="../JS/login.js"></script>
- 
+       <script src="../Recursos/Plugins/dist/sweetalert2.all.min.js"></script>
 </body>
 </html>

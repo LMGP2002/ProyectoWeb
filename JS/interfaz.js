@@ -49,7 +49,6 @@ comprarBtn.addEventListener('click',()=>{
     })
     tittle.innerHTML=comprarBtn.getAttribute('data-category');
     close();
-
 }
 })
 
@@ -89,3 +88,15 @@ window.addEventListener('click',(e)=>{
 });
 }
 
+//LOGIN
+/* const inicioS=document.querySelector('#inicioS');
+inicioS.addEventListener('click',()=>{
+    if(session=='Vacío'){
+        Swal.fire(
+            'Good job!',
+            'You clicked the button!',
+            hola()
+          )
+    }
+})
+ */
