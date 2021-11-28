@@ -12,7 +12,6 @@ const modalC=document.querySelector(".modal_container");
 //PLANES
 let category="";
 let objetos=document.querySelectorAll(".card");
-console.log(objetos);
 objetos.forEach((item,index)=>{  
     item.addEventListener('click', ()=>{
         switch(index){

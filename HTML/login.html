@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,30 +11,33 @@
     <script src="https://kit.fontawesome.com/523f0710e5.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
+
 <body>
     <header class="container">
         <div class="forms_container">
             <div class="login_signup">
-                 <form action="../PHP/iniciar_sesion.php" method="POST" class="login_form">
+                <form action="../PHP/iniciar_sesion.php" method="POST" class="login_form">
                     <h2 class="title">Log In</h2>
                     <div class="input_field">
                         <i class="fas fa-user"></i>
-                        <input required id="nombre_usuarioo"  name="nombre_usuarioo" type="text" placeholder="Username">
+                        <input required id="nombre_usuarioo" name="nombre_usuarioo" type="text" placeholder="Username">
                     </div>
                     <div class="input_field">
                         <i class="fas fa-lock"></i>
                         <input required id="contraseñaa" name="contraseñaa" type="password" placeholder="Password">
                     </div>
-                    <button type="submit" id="inicioS" value="Login" class="btn">Login</button>                    
+                    <button type="submit" id="inicioS" value="Login" class="btn">Login</button>
                     <p class="social_text">Revisa nuestras redes sociales</p>
                     <div class="social_media">
-                        <a href="https://www.facebook.com/profile.php?id=100074361196775" target="_blank" class="social_icon">
+                        <a href="https://www.facebook.com/profile.php?id=100074361196775" target="_blank"
+                            class="social_icon">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="https://twitter.com/HardWorkUdB"  target="_blank" class="social_icon">
+                        <a href="https://twitter.com/HardWorkUdB" target="_blank" class="social_icon">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="https://www.youtube.com/channel/UCiyLs3C67dYlHt86otVEwJw"  target="_blank" class="social_icon">
+                        <a href="https://www.youtube.com/channel/UCiyLs3C67dYlHt86otVEwJw" target="_blank"
+                            class="social_icon">
                             <i class="fab fa-youtube"></i>
                         </a>
                         <a href="https://www.snapchat.com/add/hardworkudb" target="_blank" class="social_icon">
@@ -41,30 +45,34 @@
                         </a>
                     </div>
                 </form>
-                <form id="registro_usuario" action="../PHP/registrar.php"  method="POST" class="signup_form">
+                <form id="registro_usuario" action="../PHP/registrar.php" method="POST" class="signup_form">
                     <h2 class="title">Sign Up</h2>
                     <div class="input_field">
                         <i class="fas fa-user"></i>
-                        <input minlength='5' id="nombre_usuario" name="nombre_usuario" type="text" placeholder="Username" required>
+                        <input minlength='5' id="nombre_usuario" name="nombre_usuario" type="text"
+                            placeholder="Username" required>
                     </div>
                     <div class="input_field">
                         <i class="fas fa-envelope"></i>
-                        <input id="email" name="email" type="email"  placeholder="Email" required>                      
+                        <input id="email" name="email" type="email" placeholder="Email" required>
                     </div>
                     <div class="input_field">
                         <i class="fas fa-lock"></i>
-                        <input minlength='5' id="contraseña" name="contraseña" type="password" placeholder="Password" required>
+                        <input minlength='5' id="contraseña" name="contraseña" type="password" placeholder="Password"
+                            required>
                     </div>
                     <button type="submit" value="Sing up" class="btn solid">Sing Up</button>
                     <p class="social_text">Revisa nuestras redes sociales</p>
                     <div class="social_media">
-                        <a href="https://www.facebook.com/profile.php?id=100074361196775"  target="_blank" class="social_icon">
+                        <a href="https://www.facebook.com/profile.php?id=100074361196775" target="_blank"
+                            class="social_icon">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="https://twitter.com/HardWorkUdB"  target="_blank" class="social_icon">
+                        <a href="https://twitter.com/HardWorkUdB" target="_blank" class="social_icon">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="https://www.youtube.com/channel/UCiyLs3C67dYlHt86otVEwJw"  target="_blank" class="social_icon">
+                        <a href="https://www.youtube.com/channel/UCiyLs3C67dYlHt86otVEwJw" target="_blank"
+                            class="social_icon">
                             <i class="fab fa-youtube"></i>
                         </a>
                         <a href="https://www.snapchat.com/add/hardworkudb" target="_blank" class="social_icon">
@@ -87,13 +95,14 @@
                 <div class="content">
                     <h3>¿Ya estás registrado?</h3>
                     <p>Revisa las últimas novedades de nuestro gym.</p>
-                 <button id="login_btn" class="btn transparent" >Log In</button>  
+                    <button id="login_btn" class="btn transparent">Log In</button>
                 </div>
                 <img src="../Recursos/reg.svg" alt="Ilustración" class="image">
             </div>
         </div>
     </header>
-       <script src="../JS/login.js"></script>
-       <script src="../Recursos/Plugins/dist/sweetalert2.all.min.js"></script>
+    <script src="../JS/login.js"></script>
+    <script src="../Recursos/Plugins/dist/sweetalert2.all.min.js"></script>
 </body>
+
 </html>
