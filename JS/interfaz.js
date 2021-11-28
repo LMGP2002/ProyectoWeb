@@ -45,10 +45,10 @@ comprarBtn.addEventListener('click',()=>{
         fetch('../PHP/plan.php',{
         method:'POST',
         body: data
-    })
-    tittle.innerHTML=comprarBtn.getAttribute('data-category');
-    close();
-}
+        })
+        tittle.innerHTML=comprarBtn.getAttribute('data-category');
+        close();
+    }
 })
 
 
@@ -86,16 +86,3 @@ window.addEventListener('click',(e)=>{
     }
 });
 }
-
-//LOGIN
-/* const inicioS=document.querySelector('#inicioS');
-inicioS.addEventListener('click',()=>{
-    if(session=='Vacío'){
-        Swal.fire(
-            'Good job!',
-            'You clicked the button!',
-            hola()
-          )
-    }
-})
- */

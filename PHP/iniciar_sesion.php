@@ -18,7 +18,6 @@ include_once 'conexion.php';
 $usuario_nom = $_POST['nombre_usuarioo'];
 $contra = $_POST['contraseñaa'];
 
-
 $sql = 'SELECT * FROM usuario where nombre_usuario=? ';
 $sentencia = $pdo->prepare($sql);
 $sentencia->execute(array($usuario_nom));
