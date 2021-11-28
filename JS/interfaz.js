@@ -66,9 +66,9 @@ if(session!="Vacío"){
 
 if(session=="Vacío"){
     comprarBtn.setAttribute('href','../HTML/login.html');
+    comprarBtn.removeAttribute('data-id');
     modalUser.setAttribute('href','../HTML/login.html');
 }else{
-   
     ocultarBtn.style.display="none";
     modificarBtn.setAttribute('href','#plans');
     modificarBtn.innerHTML= "Adquirir";

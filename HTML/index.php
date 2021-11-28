@@ -27,7 +27,7 @@ session_start();
                 <a class="modal_users" id="modalUser" href="#"><i class="fas fa-user icon"></i></a>
                 <a href="https://www.facebook.com/profile.php?id=100074361196775" target="_blank" ><i class="fab fa-facebook-f icon"></i></a>
                 <a href="https://www.youtube.com/channel/UCiyLs3C67dYlHt86otVEwJw" target="_blank"><i class="fab fa-youtube icon"></i></a>
-                <a href="../PHP/cerrar_sesion.php"><i class="fas fa-shopping-cart icon"></i></a>
+                <a href="../PHP/cerrar_sesion.php"><i class="fas icon fa-sign-out-alt"></i></a>
             </div>
         </nav>
         <!-- Modal Users -->
@@ -147,7 +147,11 @@ session_start();
                     <h2>Este Plan Incluye</h2>
                     <p id="descripcion_plan"></p>
                 </div>
-                <a id="comprarBtn" data-id="<?php echo $_SESSION['id']?>" class="button_modal_planes">Comprar</a>
+                <a id="comprarBtn" data-id="<?php if(isset($_SESSION['id']) ){
+                                echo $_SESSION['id'];
+                            }else {
+                                echo ('Vacío');
+                            }?>" class="button_modal_planes">Comprar</a>
             </div>
         </div>
     </div>
@@ -238,8 +242,8 @@ session_start();
         </footer>
         <script src="../JS/funcionamiento.js"></script>
         <script src="../JS/jquery-3.6.0.min.js"></script>
-        <script src="../JS/style.js"></script>
         <script src="../JS/interfaz.js"></script>
+        <script src="../JS/style.js"></script>
         
 </body>
 
