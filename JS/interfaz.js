@@ -37,32 +37,22 @@ objetos.forEach((item,index)=>{
 });
 
 comprarBtn.addEventListener('click',()=>{
-if(session!="Vacío"){
-    document.querySelector('#tittle').innerHTML=comprarBtn.getAttribute('data-category');
-    let data=new FormData();
-    data.append('nomPlan',comprarBtn.getAttribute('data-category'));
-    data.append('id',comprarBtn.getAttribute('data-id'));
+    if(session!="Vacío"){
+        const tittle = document.querySelector('#tittle');
+        let data=new FormData();
+        data.append('nomPlan',comprarBtn.getAttribute('data-category'));
+        data.append('id',comprarBtn.getAttribute('data-id'));
   
-
-    fetch('../PHP/plan.php',{
+        fetch('../PHP/plan.php',{
         method:'POST',
         body: data
     })
-    .then(function(response){
-        if(response.ok){
-           return response.text(); 
-        }else{
-            throw "error";
-        }
-    })
-    .then(function(texto){
-        console.log(texto);
-    })
-    .catch(function(error){
-        console.log(error);
-    });
+    tittle.innerHTML=comprarBtn.getAttribute('data-category');
+    close();
+
 }
 })
+
 
 if(session=="Vacío"){
     comprarBtn.setAttribute('href','../HTML/login.html');

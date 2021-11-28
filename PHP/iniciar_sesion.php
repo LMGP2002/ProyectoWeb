@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="../Recursos/Plugins/dist/sweetalert2.min.css">
+    </head>
+    <body>
+         <script src="../Recursos/Plugins/dist/sweetalert2.all.min.js"></script>
+    </body>
+</html>
 <?php
 session_start();
 include_once 'conexion.php';
@@ -11,8 +23,13 @@ $sentencia->execute(array($usuario_nom));
 $resultado= $sentencia->fetch();
 
 if(!$resultado){
-    echo"<script>alert('El usuario no existe.');
-    window.location='../HTML/login.html';</script>";
+    echo "<script>Swal.fire(
+        'Good job!',
+        'You clicked the button!',
+        'success'
+      )
+     </script>";
+
     die();
 }
 if(password_verify($contra, $resultado['contrasena'])){

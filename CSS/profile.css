@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all ease-in-out 0.5s;
   z-index: 9997;
   transition: all 0.5s;
-  padding: 70px 15px;
+  padding: 90px 15px;
   background: #040b14;
   overflow-y: auto;
 }

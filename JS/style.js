@@ -62,5 +62,6 @@ document.querySelectorAll('.abrir_modal').forEach((item,index)=> {
 window.addEventListener('click',(e)=>{
   if(e.target==modalCP){
       close();
+     
   }
 });
