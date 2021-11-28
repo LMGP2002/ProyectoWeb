@@ -55,7 +55,6 @@ $resultado= $sentencia->fetch();
         <ul>
           <li class="active"><a href="#hero"><i class="bx bx-home"></i> <span>Home</span></a></li>
           <li><a href="#about"><i class="bx bx-user"></i> <span>About you</span></a></li>
-          <li><a href="#"><i class="bx bx-dumbbell"></i> <span>Trainers</span></a></li>
           <li><a href="index.php"><i class="bx bx-exit"></i>Exit</a></li>
         </ul>
       </nav>
@@ -82,35 +81,25 @@ $resultado= $sentencia->fetch();
           <input  type="hidden" name="id"  value="<?php echo $resultado['id'] ?>">
             <div>
               <h3>Nombre</h3>
-              <input class="input" type="text"  id="nombre" name="nombre"  value="<?php echo $resultado['nombre'] ?>">
+              <input class="input" type="text"  id="nombre" name="nombre"  value="<?php echo $resultado['nombre'] ?>" required>
             </div>
             <div>
               <h3>Apellido</h3>
-              <input class="input" type="text" id="apellido" name="apellido"  value="<?php echo $resultado['apellido'] ?>">
+              <input class="input" type="text" id="apellido" name="apellido"  value="<?php echo $resultado['apellido'] ?>" required>
             </div>
             <div>
               <h3>Edad</h3>
-              <input class="input" type="text" id="edad" name="edad"  value="<?php echo $resultado['edad'] ?>">
+              <input class="input" type="number" onkeypress="return soloNumeros(event)" id="edad" name="edad"  value="<?php echo $resultado['edad'] ?>"  required>
             </div>
           </div>
           <div class="datos_column right_datos">
             <div>
               <h3>Peso</h3>
-              <input class="input" type="text" id="peso" name="peso"  value="<?php echo $resultado['peso'] ?>">
+              <input class="input" type="number" id="peso" onkeypress="return validarNeg(event)" name="peso"  value="<?php echo $resultado['peso'] ?>" required>
             </div>
             <div>
               <h3>Estatura</h3>
-              <input class="input" type="text" id="estatura" name="estatura"  value="<?php echo $resultado['estatura'] ?>">
-            </div>
-            <div class="radio_container">
-              <div>
-                <input class="radio" type="radio" name="sexo" id="hombre" checked='checked'>
-                <label class="label" for="hombre">Hombre</label>
-              </div>
-              <div>
-                <input class="radio" type="radio" name="sexo" id="mujer">
-                <label class="label" for="mujer">Mujer</label>
-              </div>
+              <input class="input" type="number" id="estatura" onkeypress="return validarNeg(event)" name="estatura"  value="<?php echo $resultado['estatura'] ?>" required>
             </div>
           </div>
       </div>
@@ -144,6 +133,7 @@ $resultado= $sentencia->fetch();
 
   <!-- Template Main JS File -->
   <script src="../JS/profile.js"></script>
+  <script src="../JS/funcionamiento.js"></script>
 
 </body>
 

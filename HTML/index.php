@@ -107,31 +107,23 @@ session_start();
             <button type="button" onclick="imc()" class="but" id="but">Calcular</button>
         </article>
         <article class="metabo">
+            <h1>Metabolismo basal</h1>
+            <h3>Calcula tu metabolismo basal</h3>
             <div>
-                 <h1>Metabolismo basal</h1>
-                 <h3>Calcula tu metabolismo basal</h3>
+                <div></div>
+                <label id="style-metabo-sex">Sexo</label>
+                <input id="sex" style="text-transform:lowercase;">
+                <label id="style-metabo-peso">Peso (Kg)</label>
+                <input type="number" id="pes" required onkeypress="return validarNeg(event)">
+                <br>
+                <label id="style-metabo-esta">Estatura (Cm)</label>
+                <input onkeypress="return soloNumeros(event)" type="number" id="esta">
+                <br>
+                <label id="style-metabo-edad">Edad</label><br>
+                <input onkeypress="return soloNumeros(event)" type="number" id="ed">
+                <br><textarea id="resmeta" disabled></textarea>
+                <button type="button" onclick="meta()" id="metaBasal">Calcular</button>
             </div>
-            <div class="input_container">
-                <div>
-                    <label >Sexo</label>
-                    <input id="sex" style="text-transform:lowercase;">
-
-                    <label >Estatura (Cm)</label>
-                    <input onkeypress="return soloNumeros(event)" type="number" id="esta">
-                </div>
-                <div>
-                    <label >Peso (Kg)</label>
-                    <input type="number" id="pes" required onkeypress="return validarNeg(event)">
-               
-                    <label >Edad</label><br>
-                    <input onkeypress="return soloNumeros(event)" type="number" id="ed">
-                </div>
-                            
-            </div> 
-            <div> 
-                    <textarea id="resmeta" disabled></textarea>
-                    <button type="button" onclick="meta()" id="metaBasal">Calcular</button>
-            </div>    
         </article>
     </section>
     <!-- Modal Planes -->
