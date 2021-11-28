@@ -45,16 +45,15 @@
                     <h2 class="title">Sign Up</h2>
                     <div class="input_field">
                         <i class="fas fa-user"></i>
-                        <input id="nombre_usuario" name="nombre_usuario" type="text" placeholder="Username" required>
+                        <input minlength='5' id="nombre_usuario" name="nombre_usuario" type="text" placeholder="Username" required>
                     </div>
                     <div class="input_field">
                         <i class="fas fa-envelope"></i>
-                        <input id="email" name="email" type="text" onkeyup="correo()" placeholder="Email" required>
-                        <p id="emailOK"></p>
+                        <input id="email" name="email" type="email" placeholder="Email" required>
                     </div>
                     <div class="input_field">
                         <i class="fas fa-lock"></i>
-                        <input id="contraseña" name="contraseña" type="password" placeholder="Password" required>
+                        <input minlength='5' id="contraseña" name="contraseña" type="password" placeholder="Password" required>
                     </div>
                     <!-- <input value="Sing up" class="btn solid"> -->
                      <button type="submit" value="Sing up" class="btn solid">Sing Up</button>
@@ -96,6 +95,5 @@
         </div>
     </header>
        <script src="../JS/login.js"></script>
-       <script src="../JS/validar_correo.js"></script>
 </body>
 </html>
