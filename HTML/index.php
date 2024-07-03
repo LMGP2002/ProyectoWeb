@@ -10,11 +10,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HardWork </title>
     <link rel="stylesheet" href="../CSS/estilos.css">
-<<<<<<< HEAD
     <script src="https://kit.fontawesome.com/78e35646e4.js" crossorigin="anonymous"></script>
-=======
-    <script src="https://kit.fontawesome.com/523f0710e5.js" crossorigin="anonymous"></script>
->>>>>>> bb6939fb4afe794c4958034149f7e02e9e55478b
 </head>
 
 <body>
@@ -22,17 +18,10 @@ session_start();
         <nav class="nav">
             <h2 class="logo">HardWork</h2>
             <ul>
-<<<<<<< HEAD
                 <li><a href="#header">Inicio</a></li>
                 <li><a href="#about">Conócenos</a></li>
                 <li><a href="#health">Salud</a></li>
                 <li><a href="#plans">Planes</a></li>
-=======
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About us</a></li>
-                <li><a href="#health">Health</a></li>
-                <li><a href="#plans">Plans</a></li>
->>>>>>> bb6939fb4afe794c4958034149f7e02e9e55478b
             </ul>
             <div class="container-icons">
                 <a class="modal_users" id="modalUser" href="#"><i class="fas fa-user icon"></i></a>
@@ -49,11 +38,7 @@ session_start();
                 <div class="transparencia">
                     <a href="" class="close"><i class="fas fa-times equis"></i></a>
                     <div class="modal_mover">
-<<<<<<< HEAD
                         <h2 class="modal_title">Tu usuario</h2>
-=======
-                        <h2 class="modal_title">Your user</h2>
->>>>>>> bb6939fb4afe794c4958034149f7e02e9e55478b
                         <div class="modal_img"><img src="../Recursos/h.png" alt="hombre"></div>
                         <div class="modal_texts">
                             <p id="bandera" data-description="<?php if(isset($_SESSION['admin']) ){
@@ -135,11 +120,8 @@ session_start();
             <div class="container_input_meta">
                 <div class="container_input">
                     <div>
-<<<<<<< HEAD
                         <p class="label">Sexo(m o f)</p>
-=======
-                        <p class="label">Sexo</p>
->>>>>>> bb6939fb4afe794c4958034149f7e02e9e55478b
+
                         <input class="input_calc" id="sex">
                     </div>
                     <div>
