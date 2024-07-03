@@ -42,7 +42,11 @@ $resultado= $sentencia->fetch();
 
       <div class="profile">
         <img src="../Recursos/user.png" alt="" class="img-fluid rounded-circle">
+<<<<<<< HEAD
         <h1 class="text-light"><a href="index.html">Tu perfil</a></h1>
+=======
+        <h1 class="text-light"><a href="index.html">User profile</a></h1>
+>>>>>>> bb6939fb4afe794c4958034149f7e02e9e55478b
         <div class="social-links mt-3 text-center">
           <a href="https://twitter.com/HardWorkUdB" target="_blank"><i class="bx bxl-twitter"></i></a>
           <a href="https://www.facebook.com/profile.php?id=100074361196775" target="_blank"><i class="bx bxl-facebook"></i></a>
@@ -53,9 +57,15 @@ $resultado= $sentencia->fetch();
       <!-- nav -->
       <nav class="nav-menu">
         <ul>
+<<<<<<< HEAD
           <li class="active"><a href="#hero"><i class="bx bx-home"></i> <span>Inicio</span></a></li>
           <li><a href="#about"><i class="bx bx-user"></i> <span>Sobre ti</span></a></li>
           <li><a href="index.php"><i class="bx bx-exit"></i>Salir</a></li>
+=======
+          <li class="active"><a href="#hero"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about"><i class="bx bx-user"></i> <span>About you</span></a></li>
+          <li><a href="index.php"><i class="bx bx-exit"></i>Exit</a></li>
+>>>>>>> bb6939fb4afe794c4958034149f7e02e9e55478b
         </ul>
       </nav>
       <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
@@ -94,11 +104,19 @@ $resultado= $sentencia->fetch();
           </div>
           <div class="datos_column right_datos">
             <div>
+<<<<<<< HEAD
               <h3>Peso (kg)</h3>
               <input class="input" type="number" id="peso" onkeypress="return validarNeg(event)" name="peso"  value="<?php echo $resultado['peso'] ?>" required>
             </div>
             <div>
               <h3>Estatura (cm)</h3>
+=======
+              <h3>Peso</h3>
+              <input class="input" type="number" id="peso" onkeypress="return validarNeg(event)" name="peso"  value="<?php echo $resultado['peso'] ?>" required>
+            </div>
+            <div>
+              <h3>Estatura</h3>
+>>>>>>> bb6939fb4afe794c4958034149f7e02e9e55478b
               <input class="input" type="number" id="estatura" onkeypress="return validarNeg(event)" name="estatura"  value="<?php echo $resultado['estatura'] ?>" required>
             </div>
           </div>

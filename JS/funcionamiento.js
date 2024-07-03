@@ -43,6 +43,7 @@ function meta() {
         var to = r - 161;
         document.getElementById('resmeta').value = `Tu metabolismo basal es ${to} `;
     } else if (sex == "m") {
+
         var to = r + 5;
         document.getElementById('resmeta').value = `Tu metabolismo basal es ${to} `;
     } else {
